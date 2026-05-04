@@ -3,132 +3,413 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Serghei Fortuna | Evidence and Case Signals</title>
-  <meta name="description" content="Selected evidence and case signals behind Serghei Fortuna's QA systems, automation, and AI quality work.">
+  <title>Serghei Fortuna — Evidence, Cases & Magnetic Blocks</title>
+  <meta name="description" content="Full evidence map: 12 structured case blocks and 62 magnetic blocks covering QA systems, AI governance, automation, accessibility, defects, and team leadership.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="index.html">
-        <strong>Serghei Fortuna</strong>
-        <span>AI QA Engineer / QA Lead</span>
-      </a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a class="active" href="evidence.html">Evidence</a>
-        <a href="mailto:fortuna.serghei92@gmail.com">Contact</a>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <strong>Serghei Fortuna</strong>
+      <span>AI QA Engineer · QA Lead</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="evidence.html" class="active">Evidence</a>
+      <a href="cv.html">CV</a>
+      <a href="mailto:fortuna.serghei92@gmail.com" class="nav-cta">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> Evidence & cases</div>
+      <h1>The systems behind the positioning.</h1>
+      <p class="lead">12 structured case blocks with problem, what was built, and why it matters. Followed by 62 signal blocks — the full map of what I've built and introduced.</p>
+    </div>
+  </header>
+
+  <!-- ── 12 Evidence blocks ────────────────────────────────── -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-label">Evidence appendix</div>
+        <h2>12 structured case signals</h2>
+        <p>Filter by the type of problem. Each block explains the business pain, what was built, and why it matters to a team.</p>
+      </div>
+
+      <!-- Filter -->
+      <div class="filter-row" role="group" aria-label="Filter by category">
+        <button class="filter-btn active" type="button" data-filter="all">All 12</button>
+        <button class="filter-btn" type="button" data-filter="ai">AI &amp; Governance</button>
+        <button class="filter-btn" type="button" data-filter="spec">Requirements</button>
+        <button class="filter-btn" type="button" data-filter="auto">Automation</button>
+        <button class="filter-btn" type="button" data-filter="quality">Visual &amp; A11y</button>
+        <button class="filter-btn" type="button" data-filter="defect">Defects</button>
+        <button class="filter-btn" type="button" data-filter="report">Reporting</button>
+        <button class="filter-btn" type="button" data-filter="team">Leadership</button>
+      </div>
+
+      <div class="grid-2" id="ev-grid">
+
+        <article class="ev-card" data-category="ai">
+          <div class="ev-card-top"><span class="tag tag-violet">AI governance</span><span class="score">96/100</span></div>
+          <h3>AI / RAG quality governance</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>AI products can't be validated only with fixed assertions. Answers may be semantically correct with different wording, or confidently wrong while looking plausible.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>QA approaches using golden datasets, measurable thresholds, semantic review, expert UAT, latency checks, hallucination risk controls, human ownership, and documented evidence for each release decision.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>Teams get a way to decide whether an AI feature is objectively testable, requires expert judgment, or needs evidence-backed release governance. "QA-complete" and "release-ready" become two separate, clearly owned decisions.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="spec">
+          <div class="ev-card-top"><span class="tag tag-green">Requirements</span><span class="score">94/100</span></div>
+          <h3>QA Spec Kit: story-to-evidence workflow</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>Requirements, test cases, bugs, and decisions often live in disconnected places. QA loses context, automation starts from assumptions, and later discussions repeat the same uncertainty.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>A story workflow where Jira context moves into QA analysis, BA questions, updated specifications, test cases, review, user-flow maps, dependency graphs, and automation-ready outputs. Session state preserves context across the cycle.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>QA documentation becomes a working delivery artifact. The path from story to "QA-complete" and "release-ready" is documented, connected, and repeatable.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="ai">
+          <div class="ev-card-top"><span class="tag tag-violet">AI governance</span><span class="score">95/100</span></div>
+          <h3>AI-assisted QA quality standard</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>Teams can use AI quickly and still produce weak outputs: invented business rules, missing edge cases, vague bugs, unstable tests, or unvalidated assumptions.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>AI-assisted QA guardrails: input quality rules (S1–S5 gates), design readiness, prompt structure, output validation, human review, audit trail, privacy rules, escalation, and a team training program with four workshops, practical assessment, and retrospective.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>AI becomes a controlled QA accelerator. The team gains speed while keeping professional ownership of every result — not an experiment but a disciplined workflow.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="auto">
+          <div class="ev-card-top"><span class="tag tag-sky">Automation</span><span class="score">93/100</span></div>
+          <h3>26,000 generated test cases from dynamic data</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>Some projects require high-volume coverage across dynamic data combinations. Writing and maintaining every case manually creates cost, delay, and inconsistency.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>Automation and data-driven approaches that generated large volumes of test cases from dynamic inputs. QA effort shifts from manual creation to pattern design, data validation, and review.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>Repeated testing patterns become scalable systems. Coverage grows with the product without growing in proportion to the number of features.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="auto">
+          <div class="ev-card-top"><span class="tag tag-sky">Automation</span><span class="score">91/100</span></div>
+          <h3>1,000+ tests in 120 hours: pattern-based automation</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>Products with many similar forms lead to duplicated test logic and expensive maintenance if each flow is automated separately.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>Reusable steps, randomized data patterns, and pattern-based automation for repeated form structures. 116 similar forms reduced to maintainable patterns, producing 1,000+ automated checks in 120 hours.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>Automation becomes maintainable at scale. The team expands coverage without multiplying code and maintenance cost.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="quality">
+          <div class="ev-card-top"><span class="tag tag-sky">Visual quality</span><span class="score">89/100</span></div>
+          <h3>Visual regression across environments</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>UI regressions may not break APIs or functional assertions, but users still see layout issues, missing sections, responsive problems, or unexpected differences across environments.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>Visual comparison approaches that open pages across environments, capture screenshots, compare differences, handle viewports/authentication/cookies, and produce reports for review. Jenkins integration for scheduled or pre-release execution.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>Visual quality becomes repeatable and reviewable before release. Teams see where a page changed, on which viewport, and in which environment.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="quality">
+          <div class="ev-card-top"><span class="tag tag-amber">Accessibility</span><span class="score">88/100</span></div>
+          <h3>Accessibility reporting and Section 508 triage</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>Accessibility reports can be large, repetitive, and difficult for teams to convert into actionable work. CSV and Word exports create more confusion than clarity.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>Reporting pipelines processing SortSite exports and Axe+Playwright scans: deduplication, classification, grouping by violation type and page element, HTML summaries, and team-ready outputs for WCAG/Section 508 contexts.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>Accessibility becomes manageable work. Teams prioritize repeated issues, track progress, and discuss fixes concretely instead of navigating an unreadable report.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="defect">
+          <div class="ev-card-top"><span class="tag tag-amber">Defects</span><span class="score">90/100</span></div>
+          <h3>Structured defect intelligence</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>Weak bug reports create expensive back-and-forth. Developers need environment, steps, expected/actual behavior, screenshots, severity, and clear reproduction context — not a one-line description.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>Structured defect workflows turning raw QA observations into reproducible Jira issues with required fields, story linkage, screenshots, and validation rules. If required information is missing, the workflow asks what to capture — not producing a weak defect.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>Defects become better communication between QA, developers, PMs, and stakeholders. Reproduction is faster and defect quality becomes consistent across the whole team.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="auto">
+          <div class="ev-card-top"><span class="tag tag-sky">Automation</span><span class="score">91/100</span></div>
+          <h3>Test batch lifecycle and QA automation review</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>Automation becomes chaotic when tests, branches, Jira statuses, PRs, and reviews are disconnected. Each engineer works independently, and the automation base becomes fragile.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>A lifecycle model for test batches — story-level branches, PR review standards with code quality expectations, merge workflow, Jira handoff, and automation quality criteria. Story-level branching instead of per-batch to reduce code chaos.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>QA automation becomes an engineering practice with maintainability, review quality, and traceability — not a collection of isolated scripts that each engineer owns individually.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="report">
+          <div class="ev-card-top"><span class="tag tag-green">Leadership</span><span class="score">92/100</span></div>
+          <h3>Weekly QA health reporting</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>Jira status alone can hide reality. Work may be visible in branches, commits, PRs, QA time, defects, or blockers before it is reflected in task status. Leadership asks "how are we doing?" and gets an optimistic summary.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>A weekly QA report framework connecting Jira, repository activity, QA time tracking, defects, timelines, trends, and AI-assisted assessment of requirements-to-code coverage. Standalone HTML document with 9 sections and trend history.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>Leadership gets a more truthful view: what is actually moving, where status diverges from reality, where deadlines overlap, and where QA capacity is going.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="spec">
+          <div class="ev-card-top"><span class="tag tag-green">Requirements</span><span class="score">90/100</span></div>
+          <h3>Multi-domain test strategy</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>One test strategy template does not fit every product. Enterprise data, healthcare migrations, compliance tools, and AI products have fundamentally different risks.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>Risk-based strategies for enterprise data platforms (BI, DWH, roles, access), healthcare/CMS migrations (production-as-oracle, UAT, go-live discipline), social/compliance tools (calculations, niche users, load assumptions), and AI/RAG products (semantic quality, golden datasets, hallucination control).</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>Quality work aligns with each product's real risk profile instead of copying a familiar template. The right risks get covered; the wrong ones don't waste capacity.</p></div>
+        </article>
+
+        <article class="ev-card" data-category="team">
+          <div class="ev-card-top"><span class="tag tag-muted">Leadership</span><span class="score">88/100</span></div>
+          <h3>QA team enablement and practice development</h3>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>Quality cannot scale through one strong individual. Teams need standards, examples, expectations, coaching, and a shared language to grow consistently.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What I built</div><p>QA standards, role expectations, live sessions, onboarding templates, mentoring approach, interview participation (20+), manual-to-automation development path, AI workflow enablement, and practical workshops with assessment and retrospective.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters</div><p>Quality becomes a team capability. People understand the quality bar, how to communicate risks, how to structure defects, when to escalate, and how to grow independently.</p></div>
+        </article>
+
       </div>
     </div>
-  </nav>
+  </section>
 
-  <main>
-    <header class="hero">
-      <div class="wrap">
-        <div class="eyebrow"><span class="dot"></span> Evidence behind the positioning</div>
-        <h1>Selected systems, cases, and proof points.</h1>
-        <p class="lead">
-          This page keeps the depth outside the main CV. It is useful when a hiring manager, CTO, or event organizer wants to understand how I think and what I build.
+  <!-- ── 62 Signal blocks ──────────────────────────────────── -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-label">Complete evidence map</div>
+        <h2>62 signal blocks — everything I built and introduced</h2>
+        <p>Grouped by focus area. Each block includes the context and magnetism score. Expand any group to read the full signals.</p>
+      </div>
+
+      <div class="accordion">
+
+        <div class="accordion-item open">
+          <button class="accordion-trigger" type="button">
+            <span>Requirements, specifications &amp; story readiness (Blocks 1–3)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">1. Early requirements analysis system <span class="acc-block-score">90/100</span></div><p>QA connects before active testing begins: checks acceptance criteria, design, roles, data, integrations, empty states, error states, access rights, and dependencies. If test cases can't be written without guessing, the story isn't ready. Reduces late clarifications, rework, and disputed defects.</p></div>
+              <div class="acc-block"><div class="acc-block-title">2. Turning requirements into a QA specification <span class="acc-block-score">92/100</span></div><p>Collects Jira context, finds unclear language, forms questions for BA/PM, and creates a structured QA specification with conditions, data, roles, expected behavior, negative scenarios, coverage boundaries, assumptions, and gaps. Becomes a working bridge between requirements, testing, automation, and maintenance.</p></div>
+              <div class="acc-block"><div class="acc-block-title">3. Reverse loop: specification back to Jira <span class="acc-block-score">87/100</span></div><p>From the finished specification: creates tasks and checklists in Jira, preserves the link between document and backlog, updates state, and maintains traceability. Solves the most expensive delivery problem — sync loss between what was decided, built, and verified.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>Automation scale, patterns &amp; data-driven testing (Blocks 4–5, 36–38)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">4. Large-scale test generation from repeating patterns <span class="acc-block-score">91/100</span></div><p>Repeating steps converted to reusable functions and data templates. 1,000+ automated checks in 120 hours; 116 similar forms reduced to maintainable patterns. Coverage scales without multiplying maintenance cost.</p></div>
+              <div class="acc-block"><div class="acc-block-title">5. Large-volume test case generation and data validation <span class="acc-block-score">93/100</span></div><p>26,000 generated test cases in one documented project context. QA effort shifts from manual copying to pattern design, validation, and review. The approach is the signal — not the raw number.</p></div>
+              <div class="acc-block"><div class="acc-block-title">36. NZDPU: automated test generation and data validation system <span class="acc-block-score">93/100</span></div><p>Large-scale data checking built as a system rather than executed as repetitive manual work. Shows the ability to build data verification infrastructure.</p></div>
+              <div class="acc-block"><div class="acc-block-title">37. RHL: speed of automation under budget constraint <span class="acc-block-score">88/100</span></div><p>Approximately 1,700 automated tests in under one month. 190 of 350 allocated hours used. Strong signal for speed, budget discipline, and the ability to build coverage quickly without compromise on structure.</p></div>
+              <div class="acc-block"><div class="acc-block-title">38. Create &amp; Assess: reducing manual QA ratio to development time <span class="acc-block-score">91/100</span></div><p>Manual QA effort at approximately 5–8% of development time versus a typical 20–30%. Shows predictability and manageable cost of quality when automation and process work together.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>Visual quality &amp; accessibility (Blocks 6–9)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">6. Automatic page comparison across environments <span class="acc-block-score">89/100</span></div><p>Framework opens pages in different environments, makes screenshots, compares visual differences, and produces a report. Configuration via files — no code changes needed for new sites. Runs locally or via Jenkins.</p></div>
+              <div class="acc-block"><div class="acc-block-title">7. Multi-page visual check with different screen sizes <span class="acc-block-score">86/100</span></div><p>URL lists, different screen sizes, authorization, cookies, login flows, and CI execution. Problems visible only on mobile, tablet, or specific environment are caught before release.</p></div>
+              <div class="acc-block"><div class="acc-block-title">8. Accessibility reporting and standard compliance <span class="acc-block-score">88/100</span></div><p>Processes SortSite exports: cleans data, removes duplicates, extracts accessibility sections, matches similar descriptions, classifies by type, and prepares team-ready files. Turns a heavy report into an actionable list.</p></div>
+              <div class="acc-block"><div class="acc-block-title">9. Automated browser accessibility scan <span class="acc-block-score">82/100</span></div><p>System crawls page lists, collects accessibility violations, groups by type and element, shows statistics, and produces HTML reports. Honest framing: auto-scan doesn't replace a full audit but provides a strong initial triage picture.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>Defect standards &amp; structured bug reporting (Blocks 10–11)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">10. Unified defect formatting standard <span class="acc-block-score">90/100</span></div><p>Rules and tools turning raw QA notes into structured defects: project, environment, story link, screenshots, expected result, actual result, steps, severity, additional conditions. If required info is missing, the system returns questions instead of creating a weak bug.</p></div>
+              <div class="acc-block"><div class="acc-block-title">11. Defects as structured data objects <span class="acc-block-score">88/100</span></div><p>Bugs as structured objects with fields, templates, validation, attachments, and story links. Enables Jira API creation and consistent defect quality at scale. Less chaos in bug tracking; faster reproducibility.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>Browser automation &amp; real page structure (Blocks 12–13)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">12. Browser automation based on real page structure <span class="acc-block-score">91/100</span></div><p>First: plan page states. Then: structured snapshot of the interface. Then: locator layer built from the snapshot. Specification says what to check; snapshot shows how elements are actually represented; project rules define stable code. Reduces test fragility significantly.</p></div>
+              <div class="acc-block"><div class="acc-block-title">13. Separating interface capture from test execution <span class="acc-block-score">88/100</span></div><p>Interface study in IDE separated from mass test execution in terminal or CI. Tests don't depend on manual presence of a specific engineer. Makes automation suitable for real team use.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>AI QA systems, governance &amp; team enablement (Blocks 14–17, 27–29)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">14. QA processes with AI under human control <span class="acc-block-score">95/100</span></div><p>AI assists with requirements, questions, test scenarios, defects, reports — but the final decision stays with the human. Input rules, output checks, quality gates, and degradation signals all described. Companies want AI but fear loss of control. This directly addresses that.</p></div>
+              <div class="acc-block"><div class="acc-block-title">15. Organizational AI-QA standard with S1–S5 gates <span class="acc-block-score">95/100</span></div><p>Normative standard: requirements quality, design readiness, prompt structure, mandatory result validation, human oversight, audit trail, team competencies. Not "using AI" — a managed quality model for AI-assisted work. One of the strongest blocks for Head of QA positioning.</p></div>
+              <div class="acc-block"><div class="acc-block-title">16. Prompt Library as a team standard <span class="acc-block-score">93/100</span></div><p>Library of templates for typical QA tasks: story analysis, questions, test cases, bugs, checklists, strategy. Value is not in the prompts themselves — the team gets a repeatable way to give AI the right context and receive artifacts of consistent quality.</p></div>
+              <div class="acc-block"><div class="acc-block-title">17. Team AI training through workshops and assessment <span class="acc-block-score">92/100</span></div><p>Training program: kick-off, live demos, 4 workshops, independent practice, practical assessment, retrospective, documentation update. Shows mature change management: the tool is introduced through learning, practice, and skill verification — not a mandate.</p></div>
+              <div class="acc-block"><div class="acc-block-title">27. Strategic AI-QA vision for leadership <span class="acc-block-score">92/100</span></div><p>Strategic vision for AI-QA on a 2026–2027 horizon: why implement AI, what risks, what phases, what KPIs, what sponsorship is needed. Shows the ability to speak with leadership at the strategy, roadmap, and operational decisions level.</p></div>
+              <div class="acc-block"><div class="acc-block-title">28. QA operating model: project → requirements → story → release <span class="acc-block-score">89/100</span></div><p>Quality managed at multiple levels: project strategy, requirements preparation, story-level checks, gates, reports, regression, release readiness. The central block for Head of QA.</p></div>
+              <div class="acc-block"><div class="acc-block-title">29. Two-track transformation: system and people <span class="acc-block-score">87/100</span></div><p>Separates implementation into two tracks: build the system (workflow, standards, integrations, template library) and teach people to use it (workshops, practice, assessment, retro). Strong change management model.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>AI product quality — RAG, semantic review, governance (Blocks 30–31, 62)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">30. Contractual QA for AI/RAG portal <span class="acc-block-score">96/100</span></div><p>Quality verified not by opinion but by thresholds: search accuracy, response latency, absence of critical hallucinations, golden dataset, expert UAT validation. Rare and very strong case — shows QA for non-deterministic systems. Highest scored block.</p></div>
+              <div class="acc-block"><div class="acc-block-title">31. Four quality layers for AI systems <span class="acc-block-score">91/100</span></div><p>API checks, dataset quality of answers, browser scenarios, visual verification, and expert UAT. Avoids reducing AI verification to "opened a chat and asked a few questions." Valuable for companies starting to build AI products.</p></div>
+              <div class="acc-block"><div class="acc-block-title">62. QA Spec Kit and MACI AI Test Strategy: full cycle from story to evidence <span class="acc-block-score">94/100</span></div><p>One story passes through: status, context, analysis, BA questions, spec update, test cases, review, user-flow map update, dependency graph. Separate rules for QA analysis and test generation; session state; /qa.* and /gen.* command linkage. Especially strong: separating objectively verifiable outcomes from semantic quality requiring documented evidence, golden datasets, decision owners, and change control.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>Domain expertise &amp; test strategies (Blocks 32–35, 39)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">32. Enterprise data platform: BI, roles, access, DWH <span class="acc-block-score">92/100</span></div><p>Strategy for a net-new enterprise platform: BI calculations, role-based access, SSO, DWH data flows, and dashboards. Risk operates at the level of data and security, not just UI. Stronger for CTOs than a typical UI automation story.</p></div>
+              <div class="acc-block"><div class="acc-block-title">33. Healthcare migration: production as the reference standard <span class="acc-block-score">88/100</span></div><p>Strategy for migrating a large healthcare/CMS site: live production version as the behavioral oracle. Deviations tracked via Jira, UAT planned early, accessibility verified before go-live. Strong block on migrations, compliance, and release discipline.</p></div>
+              <div class="acc-block"><div class="acc-block-title">34. Social/compliance web tool: risk, calculations, and load <span class="acc-block-score">85/100</span></div><p>Risk-based strategy for a sensitive web tool: calculations, changing requirements, accessibility, and planned load of 50–100 concurrent users. Shows QA adaptation to domains where quality is tied to calculations, social context, and compliance risk.</p></div>
+              <div class="acc-block"><div class="acc-block-title">35. Portfolio of test strategies for different domains <span class="acc-block-score">90/100</span></div><p>Enterprise data, healthcare migration, social/compliance, AI/RAG. Strength is not in the number of documents — it's in the ability to choose the right quality model for the context. Essential for explaining the QA Lead / Head of QA role.</p></div>
+              <div class="acc-block"><div class="acc-block-title">39. Etherlast: access matrix testing — API + UI <span class="acc-block-score">78/100</span></div><p>Coverage of complex access models: approximately 90 access types, combined API and UI testing. Precise for enterprise/security-heavy contexts. Less universal but very relevant for products with complex roles and permissions.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>Documentation standards, test batch lifecycle &amp; code quality (Blocks 20–23, 40–42)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">20. Story documentation by size and complexity <span class="acc-block-score">92/100</span></div><p>Format of test documentation depends on story size: checklist for small tasks, scenarios for medium, detailed test cases for complex features, test batches for large ones. Avoids over-engineering small tasks and losing control of large ones. Shows mature quality economics.</p></div>
+              <div class="acc-block"><div class="acc-block-title">21. Test batch lifecycle: Jira, branches, PR, handoff <span class="acc-block-score">94/100</span></div><p>Test batches, Git branches, review, merge, and Jira statuses connected into a clear lifecycle. Story-level branches (not per-batch) to reduce code chaos. Strong engineering-process block for teams where QA automation must live alongside development.</p></div>
+              <div class="acc-block"><div class="acc-block-title">22. PR review culture for QA automation <span class="acc-block-score">90/100</span></div><p>Review rules for automated tests: constructiveness, isolation, anti-patterns, stability, readability, and story linkage. Moves QA automation from "each person writes as they know how" to an engineering practice.</p></div>
+              <div class="acc-block"><div class="acc-block-title">23. Test case standards and tagging system <span class="acc-block-score">91/100</span></div><p>Standard test case fields and a tagging system: batch linkage, severity, check type, environment, execution status, device, release stage. Creates data for reporting, filtering, regression, and automation. Without this system, test cases become a text archive.</p></div>
+              <div class="acc-block"><div class="acc-block-title">40. Test Cases as Code and Jira sync <span class="acc-block-score">84/100</span></div><p>Test cases as managed artifacts alongside code: versioning, tags, Jira synchronization. Reduces drift between manual checks, automation, and tasks. Shows platform-oriented thinking.</p></div>
+              <div class="acc-block"><div class="acc-block-title">41. Delivery stack through repository: specs, Jira, Figma, system maps <span class="acc-block-score">92/100</span></div><p>Requirements, specifications, system maps, Jira links, design, and Cursor contexts living alongside code. Creates a unified workspace for a delivery team. Magnetic for CTOs — solves fragmented knowledge.</p></div>
+              <div class="acc-block"><div class="acc-block-title">42. Specification as source of truth in Git <span class="acc-block-score">89/100</span></div><p>Specification lives in version control alongside change history, requirements review, and task links. Allows synchronizing decisions and returning to them later. Especially powerful for complex products and long-lived systems.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>Team development, hiring &amp; leadership (Blocks 18–19, 47–49)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">18. QA team development and level expectations <span class="acc-block-score">88/100</span></div><p>Participated in hiring, conducted QA interviews, helped define expectations for manual testing specialists by level, and formed a shared language for development. Focus: requirements analysis, documentation, communication, business context, and autonomy.</p></div>
+              <div class="acc-block"><div class="acc-block-title">19. QA onboarding template for a project <span class="acc-block-score">90/100</span></div><p>Approach where a new QA engineer gets: goal, architecture, roles, process, infrastructure, risks, metrics, and first steps. Reduces time to productivity and helps QA understand what matters for the product faster.</p></div>
+              <div class="acc-block"><div class="acc-block-title">47. Hiring participation and 20+ QA interviews <span class="acc-block-score">82/100</span></div><p>Participated in 20+ QA interviews and role expectation definition. Shows influence on team quality before a person even joins. Important evidence of maturity for Head of QA.</p></div>
+              <div class="acc-block"><div class="acc-block-title">48. Manual QA pod transition toward automation <span class="acc-block-score">87/100</span></div><p>Helped a small manual QA team move toward automation: through role expectations, live sessions, practice, review, and automation-oriented thinking. Shows ability to develop people without devaluing manual testing. Strong soft-skill block for a leader.</p></div>
+              <div class="acc-block"><div class="acc-block-title">49. QA weekly sync and recurring pain analysis <span class="acc-block-score">83/100</span></div><p>Live QA meetings where the team analyzed recurring problems: requirements, defects, processes, AI, accessibility, reports, automation. Helps close current tasks and learn from repeated situations.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>Operations, analytics &amp; capacity visibility (Blocks 24–26, 43–46, 60–61)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">24. Daily QA planning through visible updates <span class="acc-block-score">84/100</span></div><p>Format for Daily QA Task Planner: priorities, tasks, meetings, blockers, end-of-day status, and update quality rules. Simple but powerful operational tool for distributed teams. Helps managers see risks and blockers earlier.</p></div>
+              <div class="acc-block"><div class="acc-block-title">25. Project risk model without a dedicated business analyst <span class="acc-block-score">93/100</span></div><p>What happens when a project has no separate BA: who's responsible for acceptance criteria, who makes scope decisions, who arbitrates bug vs feature, how changes are escalated. Strong leadership block — many QA problems start in undistributed responsibility for requirements.</p></div>
+              <div class="acc-block"><div class="acc-block-title">26. Process improvement playbook <span class="acc-block-score">86/100</span></div><p>Approach to process improvement through phases: find the problem, analyze the cause, design the change, implement, measure. Includes process map, 5 Whys, pain voting, impact/effort, and retrospectives. Improvements are systematic, not accidental.</p></div>
+              <div class="acc-block"><div class="acc-block-title">43. Queue of stories without QA preparation <span class="acc-block-score">84/100</span></div><p>Finding tasks without associated QA preparation — which standard Jira search doesn't show. Used JQL as a starting point, then enriched data via API and rules on linked tasks. Helps see future chaos before the end of the sprint.</p></div>
+              <div class="acc-block"><div class="acc-block-title">44. QA onboarding and metrics for Scrum/Kanban <span class="acc-block-score">82/100</span></div><p>Approach to QA metrics for different board types: Scrum, Kanban, exceptions, filters, weekly and sprint slices. Helps avoid comparing the incomparable and showing load more honestly. Important operational block for QA Lead.</p></div>
+              <div class="acc-block"><div class="acc-block-title">45. Jira + Harvest: time and coverage analytics <span class="acc-block-score">80/100</span></div><p>Analytics linking tasks, team time, and coverage. Gives visibility into load, helps discuss capacity, and explains where QA is actually spending effort. Not the most spectacular case, but important for managing a project portfolio.</p></div>
+              <div class="acc-block"><div class="acc-block-title">46. Workload visualization across multiple projects <span class="acc-block-score">79/100</span></div><p>Load visualization tools across projects. Critical in agency environments where one QA or lead can hold several streams simultaneously. Shows the ability to make work fast and load transparent for the team.</p></div>
+              <div class="acc-block"><div class="acc-block-title">60. Ability to handle up to ten QA streams <span class="acc-block-score">90/100</span></div><p>Experience leading up to ten parallel projects in peak periods and typically six initiatives. Such scale requires visibility, priorities, syncs, documentation, escalations, and risk-based planning. Explains why Serghei thinks in processes and quality systems.</p></div>
+              <div class="acc-block"><div class="acc-block-title">61. Weekly QA Report Framework: real project health <span class="acc-block-score">92/100</span></div><p>Framework stitches data from Jira, code repository, QA time tracking, defects, and project timelines. Shows not just Jira statuses but real project state: where branches and commits exist, where work happens outside visible status, where QA time goes, which deadlines overlap, where risks accumulate. Autonomous HTML document with 9 sections, weekly snapshots, trend history, and AI-assisted requirements coverage analysis.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>QA as a Service — packaging quality as value (Blocks 51–59)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">51. QA as a Service: market research <span class="acc-block-score">78/100</span></div><p>Analyzed the secondary QA and specialized QA provider market to understand how companies package quality as a service. Shows a view of QA from inside the team and as a market value.</p></div>
+              <div class="acc-block"><div class="acc-block-title">52. QA as a Service: delivery model and access tiers <span class="acc-block-score">90/100</span></div><p>Model for delivering QA services: what access levels are needed, what can be done with URL only, what requires staging, what requires CI/repo access, what's only possible with an embedded model. Mature view of risks, security, and QA cost. Strong block for practice lead roles.</p></div>
+              <div class="acc-block"><div class="acc-block-title">53. Site Intelligence Audit as an entry format <span class="acc-block-score">86/100</span></div><p>Audit format: collect behavior map, accessibility issues, broken links, functional anomalies, visual deviations, and give leadership a clear report. Low-friction entry that shows QA value without a long contract.</p></div>
+              <div class="acc-block"><div class="acc-block-title">54. Drupal Update Safety as a practical service offer <span class="acc-block-score">85/100</span></div><p>Verification format before/after a Drupal update: compare critical pages, check basic flows, visual differences, regression. Very specific pain for Drupal teams. Best positioned honestly without promising guarantees without legal framing.</p></div>
+              <div class="acc-block"><div class="acc-block-title">55. Release Confidence Retainer as a long-term service model <span class="acc-block-score">87/100</span></div><p>Format for ongoing release support where QA regularly helps the team understand readiness, risks, and product status. Translates QA from a one-time check into a permanent managed function. Shows thinking beyond the sprint.</p></div>
+              <div class="acc-block"><div class="acc-block-title">56. QA Process Audit as a standalone value format <span class="acc-block-score">84/100</span></div><p>Process audit: interviews, current process analysis, pain map, recommendations, improvement roadmap. Strong consulting block — shows the ability to diagnose a quality system and provide an improvement plan. Especially useful for companies where QA exists but quality remains unpredictable.</p></div>
+              <div class="acc-block"><div class="acc-block-title">57. Drupal-first positioning and practical focus <span class="acc-block-score">85/100</span></div><p>Materials highlight Drupal as a practical focus: there's experience, clear pain points, a niche, and service formats. Doesn't narrow Serghei to one stack — gives a clear entry point for the market.</p></div>
+              <div class="acc-block"><div class="acc-block-title">58. Value-first outreach and proving value before the sale <span class="acc-block-score">80/100</span></div><p>Approach where contact starts not with selling hours but with a useful observation: a found problem, a risk, a mini-audit, a sample report. Shows maturity in communicating with potential clients.</p></div>
+              <div class="acc-block"><div class="acc-block-title">59. Named QA Lead as the face of a practice <span class="acc-block-score">84/100</span></div><p>In Phase 2 materials, Serghei appears as Named QA Lead — the face of the QA practice. A client or company gets not an anonymous function but an owner of quality who is responsible for the approach, standards, reporting, and result.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button">
+            <span>AI visual testing, strategic initiatives (Block 50)</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="acc-blocks">
+              <div class="acc-block"><div class="acc-block-title">50. AI Visual Testing Assistant as a strategic initiative <span class="acc-block-score">83/100</span></div><p>Concept of an assistant connecting design, web page, visual differences, and Jira bug creation. Documents show target impact framed as an initiative/roadmap, not a proven fact. Magnetism: thinking about QA tools as products to be built.</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Positioning line ──────────────────────────────────── -->
+  <section>
+    <div class="wrap" style="max-width:860px; margin:0 auto">
+      <div class="quote-block">
+        <p class="quote-text">I build QA systems that connect requirements, automation, evidence, reporting, and team behavior so quality becomes visible earlier and release decisions become less dependent on guesswork.</p>
+        <p class="quote-sub" style="margin-top:18px">
+          <a class="btn btn-primary" href="mailto:fortuna.serghei92@gmail.com">Get in touch</a>
+          &nbsp;&nbsp;
+          <a class="btn" href="cv.html">View the HTML CV</a>
         </p>
-        <div class="hero-actions">
-          <a class="button primary" href="cv.html">Back to HTML CV</a>
-          <a class="button" href="index.html">Back to homepage</a>
-        </div>
-      </div>
-    </header>
-
-    <section class="page-section">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Evidence Map</h2>
-          <p>The strongest signals are grouped by the business problem they solve, not by tool name.</p>
-        </div>
-
-        <div class="grid">
-          <article class="card">
-            <div class="icon">01</div>
-            <h3>Requirements become visible earlier</h3>
-            <p>Ready-for-refinement thinking, QA questions, acceptance criteria review, roles, data, empty states, error states, and story-level specifications.</p>
-          </article>
-          <article class="card">
-            <div class="icon">02</div>
-            <h3>Automation scales through patterns</h3>
-            <p>Reusable form logic, generated data, test batches, PR review for QA automation, CI-ready execution, and browser-aware locator strategy.</p>
-          </article>
-          <article class="card">
-            <div class="icon">03</div>
-            <h3>AI is governed, not blindly trusted</h3>
-            <p>Input rules, validation gates, prompt libraries, human oversight, golden datasets, semantic review, and documented ownership of release decisions.</p>
-          </article>
-          <article class="card">
-            <div class="icon">04</div>
-            <h3>Defects become useful data</h3>
-            <p>Structured bug reports with environment, steps, expected and actual result, severity, attachments, story linkage, and stop-conditions for missing information.</p>
-          </article>
-          <article class="card">
-            <div class="icon">05</div>
-            <h3>Accessibility and visual quality become reviewable</h3>
-            <p>Deduplicated accessibility findings, grouped violations, cross-environment screenshots, viewport-aware checks, and HTML reports.</p>
-          </article>
-          <article class="card">
-            <div class="icon">06</div>
-            <h3>Leadership gets project health</h3>
-            <p>Weekly reporting concepts that connect Jira, code activity, QA time, defects, deadlines, trends, and AI-assisted analysis of project risk.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section">
-      <div class="wrap two-col">
-        <div class="section-head">
-          <h2>Career Narrative</h2>
-          <p>A short timeline that explains the direction of the profile.</p>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <time>Foundation</time>
-            <div>
-              <h3>Manual QA and product thinking</h3>
-              <p class="muted">Seeing the product through user behavior, edge cases, requirements gaps, and real risk.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>Automation</time>
-            <div>
-              <h3>Repeatable checks and framework design</h3>
-              <p class="muted">Moving recurring manual effort into stable, reusable, reviewable automation patterns.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>Leadership</time>
-            <div>
-              <h3>QA as a system</h3>
-              <p class="muted">Requirements, defects, reports, team development, release readiness, and process improvement.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>AI QA</time>
-            <div>
-              <h3>AI speed with evidence and control</h3>
-              <p class="muted">AI-assisted QA workflows, prompt standards, golden datasets, human review, and AI product quality governance.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <span>© Serghei Fortuna. Evidence page.</span>
-      <div class="contact-links">
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="mailto:fortuna.serghei92@gmail.com">Email</a>
       </div>
     </div>
-  </footer>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <strong>Serghei Fortuna</strong>
+      <p>AI QA Engineer · QA Lead · Quality Systems</p>
+    </div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="evidence.html">Evidence</a>
+      <a href="cv.html">CV</a>
+      <a href="mailto:fortuna.serghei92@gmail.com">Email</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="site.js"></script>
 </body>
 </html>

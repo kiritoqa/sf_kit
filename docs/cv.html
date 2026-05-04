@@ -3,118 +3,368 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Serghei Fortuna | HTML CV</title>
-  <meta name="description" content="HTML CV for Serghei Fortuna, AI QA Engineer and QA Lead.">
+  <title>Serghei Fortuna — HTML CV</title>
+  <meta name="description" content="HTML CV for Serghei Fortuna: AI QA Engineer / Senior QA Automation Engineer / QA Lead. 7+ years, 25+ projects.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="index.html">
-        <strong>Serghei Fortuna</strong>
-        <span>AI QA Engineer / QA Lead</span>
-      </a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a class="active" href="cv.html">CV</a>
-        <a href="evidence.html">Evidence</a>
-        <a href="mailto:fortuna.serghei92@gmail.com">Contact</a>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <strong>Serghei Fortuna</strong>
+      <span>AI QA Engineer · QA Lead</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="evidence.html">Evidence</a>
+      <a href="cv.html" class="active">CV</a>
+      <a href="mailto:fortuna.serghei92@gmail.com" class="nav-cta">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> HTML CV — two versions</div>
+      <h1>CV built for two different conversations.</h1>
+      <p class="lead">Version A focuses on automation depth and AI tooling. Version B focuses on quality systems, leadership, and delivery process. Use the tab to switch.</p>
+      <div class="hero-actions" style="margin-top:24px">
+        <a class="btn btn-primary" href="mailto:fortuna.serghei92@gmail.com">Contact me</a>
+        <a class="btn" href="evidence.html">Evidence appendix</a>
+        <a class="btn" href="about.html">Full story</a>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <main>
-    <header class="hero">
-      <div class="wrap">
-        <div class="eyebrow"><span class="dot"></span> HTML CV</div>
-        <h1>QA Lead who builds systems for early risk discovery, automation confidence, and AI quality control.</h1>
-        <p class="lead">
-          This page is designed for recruiters and hiring managers who want the CV view without opening raw markdown files.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="mailto:fortuna.serghei92@gmail.com">Contact</a>
-          <a class="button" href="evidence.html">Open evidence</a>
-          <a class="button" href="index.html">Back to homepage</a>
+  <section>
+    <div class="wrap">
+      <!-- CV version tabs -->
+      <div class="tab-row" role="tablist">
+        <button class="tab-btn active" type="button" data-tab="auto" role="tab" aria-selected="true">
+          Version A — AI QA Engineer / Automation Lead
+        </button>
+        <button class="tab-btn" type="button" data-tab="lead" role="tab" aria-selected="false">
+          Version B — QA Lead / Quality Systems Lead
+        </button>
+      </div>
+
+      <!-- ── Version A ─────────────────────────────────────── -->
+      <div class="tab-panel active" data-panel="auto" role="tabpanel">
+        <div class="cv-layout">
+
+          <!-- Sidebar -->
+          <aside class="side-panel">
+            <h3>Contact</h3>
+            <ul class="check-list" style="margin-bottom:24px">
+              <li><span class="chk">@</span><span>fortuna.serghei92@gmail.com</span></li>
+              <li><span class="chk">✆</span><span>+373 79 803 132</span></li>
+              <li><span class="chk">in</span><span>sergey-fortuna-11864a1a2</span></li>
+              <li><span class="chk">📍</span><span>Chisinau, Moldova</span></li>
+            </ul>
+
+            <h3>Core Stack</h3>
+            <div class="stack-grid">
+              <span class="stack-pill">Java</span>
+              <span class="stack-pill">JavaScript</span>
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">Selenium</span>
+              <span class="stack-pill">Selenide</span>
+              <span class="stack-pill">Playwright</span>
+              <span class="stack-pill">TestNG</span>
+              <span class="stack-pill">JUnit</span>
+              <span class="stack-pill">REST Assured</span>
+              <span class="stack-pill">Appium</span>
+              <span class="stack-pill">Jenkins</span>
+              <span class="stack-pill">Docker</span>
+              <span class="stack-pill">Git</span>
+              <span class="stack-pill">Jira</span>
+              <span class="stack-pill">Allure</span>
+            </div>
+
+            <div style="margin-top:24px">
+              <h3>AI QA</h3>
+              <div class="stack-grid">
+                <span class="stack-pill">Prompt libraries</span>
+                <span class="stack-pill">Golden datasets</span>
+                <span class="stack-pill">Human-in-the-loop</span>
+                <span class="stack-pill">Semantic review</span>
+                <span class="stack-pill">AI test generation</span>
+              </div>
+            </div>
+
+            <div style="margin-top:24px">
+              <h3>Languages</h3>
+              <ul class="check-list">
+                <li><span class="chk">EN</span><span>Intermediate</span></li>
+                <li><span class="chk">RU</span><span>Native</span></li>
+                <li><span class="chk">RO</span><span>Intermediate</span></li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- Main content -->
+          <div>
+            <div class="cv-block">
+              <h3>AI QA Engineer / Senior QA Automation Engineer / QA Automation Lead</h3>
+              <p>7+ years building automation frameworks, AI-assisted QA workflows, test strategy, and quality tooling across government, healthcare, enterprise web, Drupal/CMS, accessibility, and AI-driven product contexts.</p>
+              <p style="margin-top:12px">I build systems that make quality faster, more visible, and more repeatable: requirements analysis, QA specifications, test generation, visual regression, accessibility reporting, structured defect workflows, browser automation, CI/CD integration, and AI-assisted QA with human validation.</p>
+            </div>
+
+            <div class="cv-block">
+              <h3>Core Strengths</h3>
+              <ul>
+                <li>Test automation architecture: Java, Selenium, Selenide, Playwright, TestNG, JUnit, REST Assured, Postman.</li>
+                <li>AI-assisted QA: requirements analysis, test design, checklist generation, defect structuring, reporting, QA workflow acceleration.</li>
+                <li>Browser automation grounded in real page structure: page objects, reliable locators, real state capture, CI-ready execution.</li>
+                <li>Data-driven and pattern-based automation: reusable flows, generated test data, large-scale test case generation.</li>
+                <li>Visual and accessibility automation: cross-environment screenshots, viewport checks, WCAG/Section 508 reporting, triage-ready HTML outputs.</li>
+                <li>Jira/CI/tooling integration: Jira workflows, Bitbucket, Jenkins, Docker, Git, structured QA reporting.</li>
+                <li>Quality engineering leadership: code review, QA standards, mentoring, test batch lifecycle, process improvement.</li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h3>Selected Impact</h3>
+              <ul>
+                <li>Built an automated system that generated <strong class="hl">26,000 test cases</strong> from dynamic data inputs on a large project.</li>
+                <li>Implemented <strong class="hl">1,000+ automated tests in 120 hours</strong> by turning <strong class="hl">116 similar forms</strong> into reusable steps and data patterns.</li>
+                <li>Automated approximately <strong class="hl">1,700 test cases in under one month</strong>, completing the work with 190 of 350 allocated hours.</li>
+                <li>Reduced manual QA effort to approximately <strong class="hl">5–8% of development time</strong> in one documented context through integrated automation and process design.</li>
+                <li>Built visual regression approaches comparing pages across environments, viewports, auth states, and release stages.</li>
+                <li>Built accessibility reporting pipelines that turn large WCAG/Section 508 reports into deduplicated, categorized, team-ready outputs.</li>
+                <li>Designed structured defect workflows converting raw QA observations into reproducible Jira issues with required context, screenshots, severity, and story linkage.</li>
+                <li>Worked on QA approaches for AI/RAG products using golden datasets, measurable thresholds, semantic review, and evidence-based release decisions.</li>
+                <li>Managed QA across up to <strong class="hl">6 concurrent projects</strong> regularly, with peak exposure to <strong class="hl">10 QA streams</strong>.</li>
+                <li>Participated in <strong class="hl">20+ QA interviews</strong>, mentoring, role expectations, and manual-to-automation team development.</li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h4>Senior QA Automation Engineer / QA Lead — Insomniac Design · 2023 – Present</h4>
+              <ul>
+                <li>Lead QA automation and quality initiatives across multiple concurrent projects: web, Drupal/CMS, public sector, healthcare, enterprise, and AI-driven contexts.</li>
+                <li>Design automation strategies connecting requirements, test cases, browser execution, CI/CD, Jira, reporting, and release readiness.</li>
+                <li>Build AI-assisted QA systems for requirements analysis, QA specification, test generation, structured defect creation, coverage review, and reporting.</li>
+                <li>Develop and maintain frameworks using Java, Selenium/Selenide, Playwright, TestNG, JUnit, REST Assured, Jenkins, Docker, Git, and Bitbucket.</li>
+                <li>Build visual regression and browser automation approaches comparing real page states across environments, viewports, authentication states, and release stages.</li>
+                <li>Create accessibility reporting workflows for WCAG/Section 508 triage including report processing, deduplication, categorization, and repeatable outputs.</li>
+                <li>Define QA standards for test documentation, bug reporting, XPath/Page Object conventions, automation structure, test batch lifecycle, and PR review.</li>
+                <li>Mentor QA specialists, support manual-to-automation growth, participate in hiring, and contribute to QA role expectations.</li>
+              </ul>
+              <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border)">
+                <div class="ev-block-label">Selected projects</div>
+                <ul style="margin-top:8px">
+                  <li><strong>Large-scale data-driven QA:</strong> automated system generating <span class="hl">26,000 test cases</span> from dynamic data inputs.</li>
+                  <li><strong>RHL automation:</strong> approximately <span class="hl">1,700 test cases</span> in under one month; delivered using 190 of 350 allocated hours.</li>
+                  <li><strong>NewSTEPs:</strong> <span class="hl">1,000+ automated tests in 120 hours</span> by converting 116 similar forms into reusable automation and data patterns.</li>
+                  <li><strong>CSG:</strong> automation validating <span class="hl">1,000+ agent configurations</span> within allocated budget.</li>
+                  <li><strong>Create &amp; Assess:</strong> integrated automation reducing manual QA effort to approximately <span class="hl">5–8% of development time</span>.</li>
+                  <li><strong>AI/RAG QA:</strong> quality models with golden datasets, semantic review, measurable thresholds, and evidence-based release decisions.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cv-block">
+              <h4>QA Automation Engineer — Insomniac Design · 2020 – 2023</h4>
+              <ul>
+                <li>Designed and implemented automated test frameworks for web applications using Java, Selenium, Selenide, TestNG, JUnit, and CI/CD pipelines.</li>
+                <li>Created reusable test components, page objects, test data patterns, and project-specific automation flows.</li>
+                <li>Built custom solutions for visual and functional testing, including cross-environment comparison and performance-oriented improvements.</li>
+                <li>Established QA documentation, test guidelines, Jira dashboards, workload tracking, and daily team synchronization practices.</li>
+                <li>Worked across projects involving database validation, access rights, API testing, SDK testing, Dockerized execution, and complex regression coverage.</li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h4>QA Automation Engineer — Impostar Service · 2019 – 2020</h4>
+              <ul>
+                <li>Developed and maintained UI automation using Selenium WebDriver and Java.</li>
+                <li>Created automated tests for regression scenarios and supported test planning, execution, and bug verification.</li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h4>Junior Manual Tester — Impostar Service · Feb 2019 – May 2019</h4>
+              <ul>
+                <li>Analyzed requirements, created and executed test cases, performed functional/regression/exploratory testing, and reported defects.</li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h3>Education</h3>
+              <p><strong>Technical University of Moldova (TUM)</strong><br>
+              Bachelor's Degree in Technology and Management · 2011–2016</p>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
 
-    <section class="page-section">
-      <div class="wrap cv-layout">
-        <aside class="panel side-panel">
-          <h2>Snapshot</h2>
-          <ul class="list">
-            <li><span class="check">✓</span><span>7+ years in QA and automation</span></li>
-            <li><span class="check">✓</span><span>25+ projects across government, healthcare, enterprise web, Drupal/CMS, and AI products</span></li>
-            <li><span class="check">✓</span><span>Strong in QA process design, automation architecture, AI QA governance, and release readiness</span></li>
-            <li><span class="check">✓</span><span>Email: fortuna.serghei92@gmail.com</span></li>
-            <li><span class="check">✓</span><span>Phone: +373 79 803 132</span></li>
-          </ul>
-        </aside>
+      <!-- ── Version B ─────────────────────────────────────── -->
+      <div class="tab-panel" data-panel="lead" role="tabpanel">
+        <div class="cv-layout">
 
-        <div>
-          <article class="cv-block">
-            <h2>Professional Summary</h2>
-            <p>
-              Senior QA Automation Engineer and QA Lead focused on building quality systems. I work across the full quality lifecycle:
-              requirements refinement, QA specifications, risk-based testing, automation, visual and accessibility checks,
-              structured defects, reporting, AI-assisted QA, and post-release feedback.
-            </p>
-          </article>
-
-          <article class="cv-block">
-            <h2>Core Strengths</h2>
-            <ul>
-              <li>Turning unclear requirements into testable QA specifications, questions, risks, and acceptance coverage.</li>
-              <li>Building automation frameworks and repeatable patterns with Java, Selenium, Selenide, Playwright, REST Assured, TestNG, JUnit, Jenkins, Docker, and Git.</li>
-              <li>Designing AI-assisted QA workflows with human validation, quality gates, audit trail, and team training.</li>
-              <li>Creating defect standards, accessibility reporting, visual regression checks, and project health reporting.</li>
-              <li>Developing QA teams through interviews, workshops, standards, reviews, and practical examples.</li>
+          <!-- Sidebar -->
+          <aside class="side-panel">
+            <h3>Contact</h3>
+            <ul class="check-list" style="margin-bottom:24px">
+              <li><span class="chk">@</span><span>fortuna.serghei92@gmail.com</span></li>
+              <li><span class="chk">✆</span><span>+373 79 803 132</span></li>
+              <li><span class="chk">in</span><span>sergey-fortuna-11864a1a2</span></li>
+              <li><span class="chk">📍</span><span>Chisinau, Moldova</span></li>
             </ul>
-          </article>
+            <h3>Quality Systems</h3>
+            <div class="stack-grid">
+              <span class="stack-pill">Requirements analysis</span>
+              <span class="stack-pill">Risk-based strategy</span>
+              <span class="stack-pill">QA specifications</span>
+              <span class="stack-pill">AI QA governance</span>
+              <span class="stack-pill">Release readiness</span>
+              <span class="stack-pill">Team enablement</span>
+              <span class="stack-pill">Defect standards</span>
+              <span class="stack-pill">Accessibility reporting</span>
+              <span class="stack-pill">Visual regression</span>
+              <span class="stack-pill">Health reporting</span>
+            </div>
+            <div style="margin-top:24px">
+              <h3>Domains</h3>
+              <div class="stack-grid">
+                <span class="stack-pill">Government</span>
+                <span class="stack-pill">Healthcare</span>
+                <span class="stack-pill">AI / RAG</span>
+                <span class="stack-pill">Enterprise Data</span>
+                <span class="stack-pill">Drupal / CMS</span>
+                <span class="stack-pill">Compliance</span>
+              </div>
+            </div>
+          </aside>
 
-          <article class="cv-block">
-            <h2>Selected Impact</h2>
-            <ul>
-              <li>Built pattern-based automation for repeated form behavior, including a documented context with 1,000+ checks created in 120 hours.</li>
-              <li>Worked with large-scale test generation and data validation, including a documented context with 26,000 generated test cases.</li>
-              <li>Designed QA governance approaches for AI/RAG products using golden datasets, expert validation, semantic review, and documented release evidence.</li>
-              <li>Built visual and accessibility reporting flows that turn large or noisy outputs into team-ready review artifacts.</li>
-              <li>Handled several QA streams in parallel, including peak periods with up to ten active project streams.</li>
-            </ul>
-          </article>
+          <!-- Main content -->
+          <div>
+            <div class="cv-block">
+              <h3>QA Lead / Quality Systems Lead / AI QA Engineer</h3>
+              <p>7+ years building quality systems across web, Drupal/CMS, public sector, healthcare, enterprise, accessibility, and AI-driven contexts. I work across the full quality lifecycle: requirements refinement, risk analysis, QA specifications, test strategy, automation, accessibility, defect workflows, reporting, release readiness, and continuous improvement loops.</p>
+              <p style="margin-top:12px">My strongest contribution is turning recurring delivery problems into repeatable QA systems: clearer requirements, earlier risk visibility, structured evidence, better automation, consistent defect reporting, AI-assisted QA workflows, and team standards that make quality easier to manage across multiple projects.</p>
+            </div>
 
-          <article class="cv-block">
-            <h2>Experience Shape</h2>
-            <p>
-              My experience was formed in an agency environment with multiple domains, shifting priorities, different team maturity levels,
-              and several stakeholders. That context pushed me to build processes and tools that reduce dependency on individual memory:
-              onboarding templates, test strategy models, story-level QA documentation, test batch lifecycle, PR-review practices,
-              weekly reporting concepts, and repeatable AI-assisted QA workflows.
-            </p>
-          </article>
+            <div class="cv-block">
+              <h3>Leadership Value</h3>
+              <ul>
+                <li>Build QA operating models across requirements, story readiness, testing, automation, reporting, release readiness, and continuous improvement.</li>
+                <li>Design risk-based test strategies for enterprise data platforms, healthcare/CMS migrations, compliance-sensitive web tools, and AI/RAG products.</li>
+                <li>Introduce AI-assisted QA with governance: clear inputs, validation gates, human review, audit trails, privacy awareness, and escalation rules.</li>
+                <li>Improve release confidence through QA specifications, traceability, structured defects, evidence-based reporting, and weekly quality visibility.</li>
+                <li>Develop QA teams through mentoring, live sessions, role expectations, hiring input, manual-to-automation growth, and shared standards.</li>
+                <li>Align QA, PM, BA, developers, technical leads, and leadership around risks, blockers, quality bar, and release decisions.</li>
+              </ul>
+            </div>
 
-          <article class="cv-block">
-            <h2>Technical Stack</h2>
-            <p>
-              Java, JavaScript, TypeScript, Selenium, Selenide, Playwright, Appium, REST Assured, TestNG, JUnit, Cucumber,
-              Jenkins, Docker, Git, Bitbucket, Jira, CI/CD, accessibility tools, visual comparison workflows, AI-assisted development tools.
-            </p>
-          </article>
+            <div class="cv-block">
+              <h3>Selected Impact</h3>
+              <ul>
+                <li>Led QA across up to <strong class="hl">6 concurrent projects</strong> regularly, with peak exposure to <strong class="hl">10 QA streams</strong> in an agency delivery environment.</li>
+                <li>Participated in <strong class="hl">20+ QA interviews</strong>, role expectations, mentoring, and development of manual QA specialists toward automation-oriented thinking.</li>
+                <li>Built AI-assisted QA approaches covering requirements analysis, QA specification, test generation, defect creation, reporting, and human validation.</li>
+                <li>Worked on QA governance for AI/RAG products using golden datasets, measurable thresholds, semantic review, expert UAT, and evidence-based decisions.</li>
+                <li>Designed QA standards for test documentation, defect reporting, Page Object conventions, test batch lifecycle, PR review, and Jira/Git/CI handoff.</li>
+                <li>Built a weekly QA reporting concept connecting Jira, code repository activity, QA time, defects, timelines, trends, and AI-assisted coverage analysis.</li>
+                <li>Built tools and workflows generating <strong class="hl">26,000 test cases</strong>, supported <strong class="hl">1,000+ automated tests in 120 hours</strong>, and reduced repeated manual QA work.</li>
+                <li>Initiated QA as a Service models: access tiers, Site Intelligence Audit, Drupal Update Safety, Pre-UAT Audit, Release Confidence Retainer, and QA Process Audit.</li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h3>Quality Systems Capabilities</h3>
+              <div class="grid-2" style="gap:16px">
+                <div>
+                  <div class="ev-block-label">Requirements &amp; Specifications</div>
+                  <p style="color:var(--text-2); font-size:14px">Early analysis that surfaces unclear acceptance criteria, missing roles, data assumptions, integration risks, and dependency gaps before testing becomes late clarification.</p>
+                </div>
+                <div>
+                  <div class="ev-block-label">Risk-Based Test Strategy</div>
+                  <p style="color:var(--text-2); font-size:14px">Domain-specific strategies for enterprise data, CMS migrations, compliance tools, AI/RAG products, accessibility-heavy sites, and UAT readiness.</p>
+                </div>
+                <div>
+                  <div class="ev-block-label">AI QA Governance</div>
+                  <p style="color:var(--text-2); font-size:14px">Inputs, context, review rules, validation gates, audit trail, and human ownership — so AI-generated outputs don't become unverified delivery artifacts.</p>
+                </div>
+                <div>
+                  <div class="ev-block-label">Team Enablement</div>
+                  <p style="color:var(--text-2); font-size:14px">Standards, templates, live sessions, onboarding, role expectations, practical workshops, reviews, and shared language for the QA team to grow together.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-block">
+              <h4>Senior QA Automation Engineer / QA Lead — Insomniac Design · 2023 – Present</h4>
+              <ul>
+                <li>Lead QA initiatives across multiple concurrent projects with different domains, delivery teams, stakeholders, and levels of requirement maturity.</li>
+                <li>Own QA planning, test strategy, automation direction, risk visibility, release readiness, and stakeholder communication for assigned projects.</li>
+                <li>Build QA systems connecting requirements, specifications, checklists, automated tests, defects, reporting, and release decisions.</li>
+                <li>Define and improve QA standards for test cases, bug reports, automation structure, Page Objects, test batches, PR review, and team workflows.</li>
+                <li>Build AI-assisted QA workflows for requirements analysis, test design, checklist creation, bug reporting, and coverage analysis under human validation.</li>
+                <li>Work with AI/RAG quality approaches involving golden datasets, semantic review, expert validation, measurable thresholds, and objective vs subjective release evidence.</li>
+                <li>Communicate quality status, accepted risks, blockers, release readiness, and process gaps to all stakeholders.</li>
+              </ul>
+              <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border)">
+                <div class="ev-block-label">Leadership achievements</div>
+                <ul style="margin-top:8px">
+                  <li>Managed QA across up to <span class="hl">6 concurrent projects</span> regularly, peak <span class="hl">10 QA streams</span>.</li>
+                  <li>Built documented AI-assisted QA quality model with requirements readiness, design readiness, prompt structure, validation gates, human oversight, and audit trail.</li>
+                  <li>Designed QA approaches for enterprise data, healthcare/CMS migration, compliance-sensitive tools, accessibility-heavy sites, and AI/RAG products.</li>
+                  <li>Built weekly QA report framework concept connecting Jira, repository activity, QA time, defects, timelines, and AI-assisted project health assessment.</li>
+                  <li>Initiated QA as a Service thinking: market research, access tiers, audit formats, release confidence, Drupal update safety, and QA process audit.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cv-block">
+              <h4>QA Automation Engineer — Insomniac Design · 2020 – 2023</h4>
+              <ul>
+                <li>Designed and implemented automation frameworks using Java, Selenium, Selenide, TestNG, JUnit, Jenkins, Docker, Git, and Bitbucket.</li>
+                <li>Built reusable automation patterns, custom tools, visual testing approaches, Jira dashboards, and documentation standards.</li>
+                <li>Introduced daily/weekly QA synchronization practices and workload visibility for distributed project teams.</li>
+                <li>Built automation generating <span class="hl">26,000 test cases</span>, implemented <span class="hl">1,000+ tests in 120 hours</span>, automated ~<span class="hl">1,700 test cases</span> in under one month.</li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h4>Earlier roles — Impostar Service · 2019 – 2020</h4>
+              <p style="color:var(--text-2); font-size:15px">QA Automation Engineer and Junior Manual Tester. Selenium WebDriver, Java, UI automation, regression testing, cross-functional collaboration, defect reporting.</p>
+            </div>
+
+            <div class="cv-block">
+              <h3>Education</h3>
+              <p><strong>Technical University of Moldova (TUM)</strong><br>
+              Bachelor's Degree in Technology and Management · 2011–2016</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <span>© Serghei Fortuna. HTML CV.</span>
-      <div class="contact-links">
-        <a href="index.html">Home</a>
-        <a href="evidence.html">Evidence</a>
-        <a href="mailto:fortuna.serghei92@gmail.com">Email</a>
-      </div>
     </div>
-  </footer>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <strong>Serghei Fortuna</strong>
+      <p>AI QA Engineer · QA Lead · Quality Systems</p>
+    </div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="evidence.html">Evidence</a>
+      <a href="mailto:fortuna.serghei92@gmail.com">Email</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="site.js"></script>
 </body>
 </html>
