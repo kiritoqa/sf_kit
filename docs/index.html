@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Serghei Fortuna — QA Systems, Automation & AI Quality</title>
   <meta name="description" content="Senior QA Engineer and QA Lead who builds quality systems: requirements analysis, automation, AI QA governance, and release confidence across 25+ projects.">
+  <link rel="canonical" href="https://kiritoqa.github.io/sf_kit/">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,11 +17,13 @@
       <span>AI QA Engineer · QA Lead</span>
     </a>
     <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="evidence.html">Evidence</a>
-      <a href="cv.html">CV</a>
-      <a href="mailto:fortuna.serghei92@gmail.com" class="nav-cta">Contact</a>
+      <a href="index.html" class="active" aria-label="Current page: portfolio homepage">Home</a>
+      <a href="about.html" aria-label="Read professional story about Serghei Fortuna">About</a>
+      <a href="evidence.html" aria-label="Read QA case studies by Serghei Fortuna">Cases</a>
+      <a href="insights.html" aria-label="Read QA insights and writing by Serghei Fortuna">Insights</a>
+      <a href="cv.html" aria-label="Open HTML CV for Serghei Fortuna">CV</a>
+      <a href="https://www.linkedin.com/in/sergey-fortuna-11864a1a2" target="_blank" rel="noopener" aria-label="Open Serghei Fortuna LinkedIn profile">LinkedIn</a>
+      <a href="about.html#contact" class="nav-cta" aria-label="Open contact section for Serghei Fortuna">Contact</a>
     </div>
   </div>
 </nav>
@@ -43,7 +46,7 @@
           into a repeatable model of quality that scales with the product.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:fortuna.serghei92@gmail.com">Get in touch</a>
+          <a class="btn btn-primary" href="about.html#contact" aria-label="Open contact section for Serghei Fortuna">Get in touch</a>
           <a class="btn btn-sky" href="cv.html">View HTML CV</a>
           <a class="btn" href="evidence.html">See evidence</a>
           <a class="btn" href="about.html">Full story</a>
@@ -202,93 +205,53 @@
       <div class="section-head">
         <div class="section-label">Selected evidence</div>
         <h2>Four strongest case signals</h2>
-        <p>These are the business problems behind the positioning. The full evidence appendix has 12 structured case blocks.</p>
+        <p>These are the business problems behind the positioning. The cases page now keeps the strongest eight public signals and moves archive-level details out of the first reading path.</p>
       </div>
 
-      <div class="grid-2">
-        <article class="ev-card">
+      <div class="grid-2 compact-cases">
+        <article class="ev-card case-teaser">
           <div class="ev-card-top">
             <span class="tag tag-violet">AI product QA</span>
             <span class="score">96/100</span>
           </div>
-          <h3>AI / RAG quality governance</h3>
-          <div class="ev-block">
-            <div class="ev-block-label">Problem</div>
-            <p>AI products can't be validated only with fixed assertions. Answers may be semantically correct with different wording, or confidently wrong while looking plausible.</p>
-          </div>
-          <div class="ev-block">
-            <div class="ev-block-label">What I built</div>
-            <p>QA approaches using golden datasets, measurable thresholds, latency checks, semantic review, expert UAT, hallucination risk controls, human ownership, and documented evidence for each release decision.</p>
-          </div>
-          <div class="ev-block">
-            <div class="ev-block-label">Why it matters</div>
-            <p>Teams get a way to decide whether an AI feature is objectively testable, requires expert judgment, or needs evidence-backed release governance.</p>
-          </div>
+          <h3>AI quality is a contract, not a demo</h3>
+          <p>For AI/RAG products, I separate what can be checked objectively from what needs expert judgment: golden datasets, thresholds, latency, hallucination risk, semantic review, UAT evidence, and clear release ownership.</p>
+          <a class="text-link" href="evidence.html#ai-quality" aria-label="Read AI quality governance case study">Read the AI quality case</a>
         </article>
 
-        <article class="ev-card">
+        <article class="ev-card case-teaser">
           <div class="ev-card-top">
             <span class="tag tag-green">Specification</span>
             <span class="score">94/100</span>
           </div>
-          <h3>QA Spec Kit: story-to-evidence workflow</h3>
-          <div class="ev-block">
-            <div class="ev-block-label">Problem</div>
-            <p>Requirements, test cases, bugs, and decisions often live in disconnected places. QA loses context, automation starts from assumptions, and later discussions repeat the same uncertainty.</p>
-          </div>
-          <div class="ev-block">
-            <div class="ev-block-label">What I built</div>
-            <p>A story workflow where Jira context moves into QA analysis, BA questions, updated specifications, test cases, review, user-flow maps, dependency graphs, and automation-ready outputs.</p>
-          </div>
-          <div class="ev-block">
-            <div class="ev-block-label">Why it matters</div>
-            <p>QA documentation becomes a working delivery artifact. Requirements, tests, automation, defects, and release decisions stay connected.</p>
-          </div>
+          <h3>From story to evidence</h3>
+          <p>I turn Jira context, BA questions, QA specifications, test cases, user-flow maps, dependency graphs, and automation-ready outputs into one connected delivery workflow.</p>
+          <a class="text-link" href="evidence.html#specforge" aria-label="Read SpecForge story-to-evidence case study">Read the SpecForge case</a>
         </article>
 
-        <article class="ev-card">
+        <article class="ev-card case-teaser">
           <div class="ev-card-top">
             <span class="tag tag-sky">Scale</span>
             <span class="score">93/100</span>
           </div>
-          <h3><span class="hl">26,000</span> generated test cases from dynamic data</h3>
-          <div class="ev-block">
-            <div class="ev-block-label">Problem</div>
-            <p>Some projects require high-volume coverage across dynamic data combinations. Writing every case manually creates cost, delay, and inconsistency.</p>
-          </div>
-          <div class="ev-block">
-            <div class="ev-block-label">What I built</div>
-            <p>Automation and data-driven approaches that generated large volumes of test cases from dynamic inputs. QA effort shifts from manual creation to pattern design, data validation, and review.</p>
-          </div>
-          <div class="ev-block">
-            <div class="ev-block-label">Why it matters</div>
-            <p>Repeated testing patterns become scalable systems that grow with the product instead of growing the headcount.</p>
-          </div>
+          <h3><span class="hl">26,000</span> test cases without 26,000 manual decisions</h3>
+          <p>When repeated forms, flows, and dynamic data create volume, I look for the pattern and build a system around it: reusable steps, generated data, and scalable coverage.</p>
+          <a class="text-link" href="evidence.html#data-scale" aria-label="Read data-driven QA scale case study">Read the scale case</a>
         </article>
 
-        <article class="ev-card">
+        <article class="ev-card case-teaser">
           <div class="ev-card-top">
             <span class="tag tag-green">Leadership</span>
             <span class="score">92/100</span>
           </div>
-          <h3>Weekly QA health reporting</h3>
-          <div class="ev-block">
-            <div class="ev-block-label">Problem</div>
-            <p>Jira status alone can hide reality. Work may be visible in branches, commits, PRs, QA time, defects, or blockers before it is reflected in task status.</p>
-          </div>
-          <div class="ev-block">
-            <div class="ev-block-label">What I built</div>
-            <p>A weekly QA report framework concept that connects Jira, repository activity, QA time tracking, defects, timelines, trends, and AI-assisted analysis of requirements coverage.</p>
-          </div>
-          <div class="ev-block">
-            <div class="ev-block-label">Why it matters</div>
-            <p>Leadership gets a more truthful view of project health: what is moving, where status diverges from reality, and where QA capacity is actually going.</p>
-          </div>
+          <h3>What Jira says vs. what is really happening</h3>
+          <p>Leadership needs project health, not only ticket status. I connect Jira, repository activity, QA time, defects, deadlines, and coverage signals into a more truthful picture.</p>
+          <a class="text-link" href="evidence.html#project-health" aria-label="Read project health reporting case study">Read the reporting case</a>
         </article>
       </div>
 
       <div style="margin-top:28px; text-align:center">
-        <a class="btn btn-primary" href="evidence.html">View all 12 evidence blocks + 62 case signals →</a>
+        <a class="btn btn-primary" href="evidence.html">View curated case studies →</a>
       </div>
     </div>
   </section>
@@ -304,7 +267,7 @@
         </div>
         <div class="hero-actions">
           <a class="btn btn-primary" href="cv.html">Read the HTML CV</a>
-          <a class="btn" href="evidence.html">Explore evidence</a>
+          <a class="btn" href="evidence.html">Explore cases</a>
         </div>
       </div>
 
@@ -384,6 +347,7 @@
           <p>I speak differently to QA (coverage, edge cases, data), developers (logs, locators, CI stability), PM/BA (requirements, scope, blockers), and leadership (risks, capacity, release readiness). Each conversation has a different purpose.</p>
           <div style="margin-top:20px">
             <a class="btn" href="about.html">Read the full professional story →</a>
+            <a class="btn" href="insights.html">Read insights →</a>
           </div>
         </div>
       </div>
@@ -399,12 +363,13 @@
       <p>AI QA Engineer · QA Lead · Quality Systems</p>
     </div>
     <nav class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="evidence.html">Evidence</a>
-      <a href="cv.html">CV</a>
-      <a href="mailto:fortuna.serghei92@gmail.com">Email</a>
-      <a href="tel:+37379803132">Phone</a>
+      <a href="index.html" aria-label="Open portfolio homepage">Home</a>
+      <a href="about.html" aria-label="Read professional story about Serghei Fortuna">About</a>
+      <a href="evidence.html" aria-label="Read QA case studies by Serghei Fortuna">Cases</a>
+      <a href="insights.html" aria-label="Read QA insights and writing by Serghei Fortuna">Insights</a>
+      <a href="cv.html" aria-label="Open HTML CV for Serghei Fortuna">CV</a>
+      <a href="https://www.linkedin.com/in/sergey-fortuna-11864a1a2" target="_blank" rel="noopener" aria-label="Open Serghei Fortuna LinkedIn profile">LinkedIn</a>
+      <a href="about.html#contact" aria-label="Open email contact section for Serghei Fortuna">Email</a>
     </nav>
   </div>
 </footer>
