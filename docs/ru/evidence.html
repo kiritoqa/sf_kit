@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Сергей Фортуна — QA Case Studies</title>
-  <meta name="description" content="Кейсы QA: AI/RAG quality governance, SpecForge, Playwright automation, VisualGuard, accessibility, data-driven QA scale и reporting.">
+  <title>Сергей Фортуна — QA-кейсы</title>
+  <meta name="description" content="Кейсы QA: контроль качества AI/RAG, SpecForge, Playwright-автоматизация, VisualGuard, доступность, масштабирование QA на данных и отчётность.">
   <link rel="canonical" href="https://kiritoqa.github.io/sf_kit/ru/evidence.html">
   <link rel="alternate" hreflang="en" href="https://kiritoqa.github.io/sf_kit/evidence.html">
   <link rel="alternate" hreflang="ru" href="https://kiritoqa.github.io/sf_kit/ru/evidence.html">
@@ -15,15 +15,31 @@
 
 <nav class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="index.html"><strong>Serghei Fortuna</strong><span>AI QA Engineer · QA Lead</span></a>
-    <div class="nav-links">
-      <a href="index.html">Главная</a>
-      <a href="about.html">Обо мне</a>
-      <a href="evidence.html" class="active">Кейсы</a>
-      <a href="cv.html">CV</a>
-      <a href="https://www.linkedin.com/in/sergey-fortuna-11864a1a2" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="about.html#contact" class="nav-cta">Контакт</a>
-      <span class="language-switch" aria-label="Language switch"><a href="../evidence.html">EN</a><span class="active-lang">RU</span></span>
+    <a class="brand" href="index.html">
+      <strong>Сергей Фортуна</strong>
+      <span>AI QA инженер · QA Lead</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Открыть меню навигации">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" id="primary-navigation">
+      <a href="index.html" aria-label="Текущая страница: главная портфолио">Главная</a>
+      <a href="about.html" aria-label="Прочитать профессиональную историю Сергея Фортуны">Обо мне</a>
+      <a href="evidence.html" class="active" aria-label="Прочитать QA-кейсы Сергея Фортуны">Кейсы</a>
+      <a href="cv.html" aria-label="Открыть резюме Сергея Фортуны">Резюме</a>
+      <a href="https://www.linkedin.com/in/sergey-fortuna-11864a1a2" target="_blank" rel="noopener" aria-label="Открыть профиль Сергея Фортуны в LinkedIn">LinkedIn</a>
+      <a href="about.html#contact" class="nav-cta" aria-label="Открыть раздел контактов">Контакт</a>
+      <div class="language-dropdown">
+        <button class="language-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Выбор языка">
+          <span>RU</span><span class="lang-chevron" aria-hidden="true">⌄</span>
+        </button>
+        <div class="language-menu" role="menu">
+          <a href="evidence.html" class="active-lang" role="menuitem">Русский</a>
+          <a href="../evidence.html" role="menuitem">Английский</a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
@@ -33,7 +49,7 @@
     <div class="wrap">
       <div class="eyebrow"><span class="dot"></span>Кейсы</div>
       <h1>Восемь кейсов о том, как строятся QA-системы.</h1>
-      <p class="lead">Страница намеренно selective: цель быстро объяснить, какая проблема была, какая система была построена и почему такая capability важна для проекта.</p>
+      <p class="lead">Страница намеренно выборочная: цель быстро объяснить, какая проблема была, какая система была построена и почему такая возможность важна для проекта.</p>
     </div>
   </header>
 
@@ -42,81 +58,81 @@
       <div class="section-head">
         <div class="section-label">Меньше архива, больше сигнала</div>
         <h2>Кейсы, которые работают как доказательство</h2>
-        <p>Сильные QA/SDET портфолио выигрывают не количеством блоков, а несколькими ясными историями: problem, role, solution, value.</p>
+        <p>Сильные QA/SDET портфолио выигрывают не количеством блоков, а несколькими ясными историями: проблема, роль, решение, ценность.</p>
       </div>
 
-      <div class="filter-row" role="group" aria-label="Filter by category">
+      <div class="filter-row" role="group" aria-label="Фильтр по категории">
         <button class="filter-btn active" type="button" data-filter="all">Все 8</button>
-        <button class="filter-btn" type="button" data-filter="ai">AI &amp; Governance</button>
-        <button class="filter-btn" type="button" data-filter="spec">Requirements</button>
-        <button class="filter-btn" type="button" data-filter="auto">Automation</button>
-        <button class="filter-btn" type="button" data-filter="quality">Visual &amp; A11y</button>
-        <button class="filter-btn" type="button" data-filter="report">Reporting</button>
+        <button class="filter-btn" type="button" data-filter="ai">AI и контроль</button>
+        <button class="filter-btn" type="button" data-filter="spec">Требования</button>
+        <button class="filter-btn" type="button" data-filter="auto">Автоматизация</button>
+        <button class="filter-btn" type="button" data-filter="quality">Визуальное качество и A11y</button>
+        <button class="filter-btn" type="button" data-filter="report">Отчётность</button>
       </div>
 
       <div class="grid-2" id="ev-grid">
         <article id="ai-quality" class="ev-card" data-category="ai">
-          <div class="ev-card-top"><span class="tag tag-violet">AI product QA</span></div>
-          <h3>AI quality is a contract, not a demo</h3>
-          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>AI/RAG-продукт нельзя проверить несколькими вопросами “на глаз”. LLM behavior недетерминирован, latency важна, multilingual answers важны, а hallucinations могут выглядеть уверенно.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>QA model с API-first validation, golden dataset thinking, measurable thresholds, groundedness checks, p50/p95 latency, expert UAT, escalation paths и documented release evidence.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Многие команды могут показать AI demo. Гораздо меньше команд умеют принять безопасное, измеримое и ответственное решение о релизе AI-продукта.</p></div>
+          <div class="ev-card-top"><span class="tag tag-violet">QA AI-продукта</span></div>
+          <h3>Качество AI — это договорённость, а не демо</h3>
+          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>AI/RAG-продукт нельзя проверить несколькими вопросами “на глаз”. Поведение LLM недетерминировано, задержка важна, многоязычные ответы важны, а галлюцинации могут выглядеть уверенно.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>QA-модель с проверками API в первую очередь, подходом эталонного набора данных, измеримыми порогами, проверками на соответствие фактам и данным, p50/p95 задержки, экспертным UAT, путями эскалации и задокументированными доказательствами готовности релиза.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Многие команды могут показать AI-демо. Гораздо меньше команд умеют принять безопасное, измеримое и ответственное решение о релизе AI-продукта.</p></div>
         </article>
 
         <article class="ev-card" data-category="ai">
-          <div class="ev-card-top"><span class="tag tag-violet">AI governance</span></div>
-          <h3>AI-assisted QA without losing human ownership</h3>
-          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>AI ускоряет QA, но может придумывать business rules, пропускать edge cases, создавать vague bugs или outputs, за которые никто не чувствует ответственности.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Quality standard для AI-assisted QA: requirements readiness, design readiness, prompt structure, S1–S5 validation gates, human review, audit trail и team enablement.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Компания получает AI speed без AI chaos: быстрые артефакты, clear review gates и human accountability.</p></div>
+          <div class="ev-card-top"><span class="tag tag-violet">Контроль AI</span></div>
+          <h3>QA с участием AI без потери ответственности человека</h3>
+          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>AI ускоряет QA, но может придумывать бизнес-правила, пропускать пограничные сценарии, создавать неясные баги или результаты, за которые никто не чувствует ответственности.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Стандарт качества для QA с участием AI: готовность требований, готовность дизайна, структура промптов, S1-S5 валидационные этапы, ревью человеком, след аудита и развитие команды.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Компания получает скорость AI без хаоса AI: быстрые артефакты, понятные этапы ревью и ответственность человека.</p></div>
         </article>
 
         <article id="specforge" class="ev-card" data-category="spec">
-          <div class="ev-card-top"><span class="tag tag-green">Requirements</span></div>
-          <h3>From story to evidence: SpecForge</h3>
-          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>Requirements, test cases, bugs, decisions и coverage часто живут в разных местах. QA начинает с assumptions, automation стартует из unstable context.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Story-to-evidence workflow: Jira context, BA questions, QA specification, test cases, review, user-flow map, dependency graph, coverage checks и automation-ready output.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>QA становится risk discovery before commitment, а не test after development.</p></div>
+          <div class="ev-card-top"><span class="tag tag-green">Требования</span></div>
+          <h3>От задачи к доказательствам: SpecForge</h3>
+          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>Требования, тест-кейсы, баги, решения и покрытие часто живут в разных местах. QA начинает с предположений, автоматизация стартует из нестабильного контекста.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Процесс от задачи к доказательствам: контекст Jira, вопросы к BA, QA-спецификация, тест-кейсы, ревью, карта пользовательского пути, граф зависимостей, проверка покрытия и результат, готовый для автоматизации.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>QA становится обнаружением рисков до обязательств по разработке, а не тестированием после разработки.</p></div>
         </article>
 
         <article class="ev-card" data-category="auto">
-          <div class="ev-card-top"><span class="tag tag-sky">Automation architecture</span></div>
-          <h3>Spec says what. Snapshots say how.</h3>
-          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>E2E automation часто становится brittle из-за guessed selectors, copied text locators, hidden auth flows и ручных патчей внутри tests.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Spec-linked, snapshot-driven Playwright model: specification определяет поведение, MCP captures real page structure, Page Objects создаются из actual snapshots, CI runs tests independently.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Это снижает locator debt, делает tests explainable и сохраняет human ownership за specification и release decisions.</p></div>
+          <div class="ev-card-top"><span class="tag tag-sky">Архитектура автоматизации</span></div>
+          <h3>Спецификация говорит что проверять. Снапшоты показывают как.</h3>
+          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>E2E-автоматизация часто становится хрупкой из-за угаданных селекторов, скопированных текстовых локаторов, скрытых потоков авторизации и ручных патчей внутри тестов.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>связанная со спецификацией и снапшотами модель на Playwright: спецификация определяет поведение, MCP фиксирует реальную структуру страницы, Page Objects создаются из актуальных снапшотов, CI запускает тесты независимо.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Это снижает долг по локаторам, делает тесты понятнее и сохраняет ответственность человека за спецификацию и решения о релизе.</p></div>
         </article>
 
         <article class="ev-card" data-category="quality">
-          <div class="ev-card-top"><span class="tag tag-sky">Visual quality</span></div>
-          <h3>VisualGuard: visual regression as release confidence</h3>
-          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>UI regressions не всегда ломают functional tests. Layout shifts, missing sections, responsive bugs и environment differences могут дойти до пользователей.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Configurable visual regression framework: Java, Playwright, JSON configs, multiple viewports, auth handlers, screenshot-only mode, Allure reports, parallel execution, Jenkins.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Visual quality становится repeatable evidence: команда видит, что изменилось, где и при каких условиях.</p></div>
+          <div class="ev-card-top"><span class="tag tag-sky">Визуальное качество</span></div>
+          <h3>VisualGuard: визуальная регрессия как уверенность в релизе</h3>
+          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>UI-регрессии не всегда ломают функциональные тесты. Сдвиги вёрстки, пропавшие секции, адаптивные баги и различия окружений могут дойти до пользователей.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Настраиваемый фреймворк визуальной регрессии: Java, Playwright, JSON-конфиги, несколько размеров экрана, обработчики авторизации, режим только скриншотов, отчёты Allure, параллельный запуск, Jenkins.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Визуальное качество становится повторяемым доказательством: команда видит, что изменилось, где и при каких условиях.</p></div>
         </article>
 
         <article class="ev-card" data-category="quality">
-          <div class="ev-card-top"><span class="tag tag-amber">Accessibility</span></div>
-          <h3>Accessibility debt as an operational pipeline</h3>
-          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>Accessibility reports часто огромные, повторяющиеся и трудные для превращения в engineering backlog.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>SortSite processing и Axe + Playwright reporting: CSV/DOCX normalization, duplicate reduction, WCAG A/AA categorization, grouping by issue type и HTML summaries.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Compliance work становится manageable: не wall of issues, а structured backlog и способ отслеживать прогресс.</p></div>
+          <div class="ev-card-top"><span class="tag tag-amber">Доступность</span></div>
+          <h3>Доступность-долг как операционный процесс</h3>
+          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>Отчёты по доступности часто огромные, повторяющиеся и трудные для превращения в инженерный бэклог.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Обработка SortSite и отчёты Axe + Playwright: нормализация CSV/DOCX, удаление дублей, категоризация WCAG A/AA, группировка по типу проблемы и HTML-сводки.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Работа с соответствием требованиям становится управляемой: не стена проблем, а структурированный бэклог и способ отслеживать прогресс.</p></div>
         </article>
 
         <article id="data-scale" class="ev-card" data-category="auto">
-          <div class="ev-card-top"><span class="tag tag-sky">Scale</span></div>
-          <h3>26,000 test cases без 26,000 ручных решений</h3>
-          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>Некоторые продукты требуют high-volume coverage across dynamic data или repeating structures. Manual creation становится slow, inconsistent и expensive.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Data-driven и pattern-based automation: 26,000 generated test cases, 1,000+ automated tests in 120 hours through reusable patterns, approximately 1,700 tests automated in under one month.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Главное не число, а способность увидеть повторение и построить систему, которая масштабирует coverage без пропорционального роста ручной работы.</p></div>
+          <div class="ev-card-top"><span class="tag tag-sky">Масштаб</span></div>
+          <h3>26 000 тест-кейсов без 26 000 ручных решений</h3>
+          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>Некоторые продукты требуют большого покрытия по динамическим данным или повторяющимся структурам. Ручное создание становится медленным, непоследовательным и дорогим.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Автоматизация на данных и паттернах: 26 000 сгенерированных тест-кейсов, 1 000+ автоматизированных тестов за 120 часов через переиспользуемые паттерны, примерно 1 700 тестов автоматизировано менее чем за месяц.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Главное не число, а способность увидеть повторение и построить систему, которая масштабирует покрытие без пропорционального роста ручной работы.</p></div>
         </article>
 
         <article id="project-health" class="ev-card" data-category="report">
-          <div class="ev-card-top"><span class="tag tag-green">Leadership visibility</span></div>
+          <div class="ev-card-top"><span class="tag tag-green">Видимость для руководства</span></div>
           <h3>Что говорит Jira и что происходит на самом деле</h3>
-          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>Jira status может выглядеть healthy, пока branches, commits, PRs, QA time, defects и blockers говорят другое.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Weekly QA health reporting concept: standalone HTML report, Jira + Bitbucket + Harvest + defects + timelines, deadline overlap detection, trend history и AI-assisted coverage review.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Это QA leadership as decision support: leadership видит риск раньше и действует до того, как green status превращается в surprise.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Проблема</div><p>Статус в Jira может выглядеть здоровым, пока ветки, коммиты, PR, QA-время, дефекты и блокеры говорят другое.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Что было построено</div><p>Концепция еженедельного отчёта о здоровье QA: отдельный HTML-отчёт, Jira + Bitbucket + Harvest + дефекты + таймлайны, поиск пересечений дедлайнов, история трендов и анализ с поддержкой AI покрытия.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Почему это ценно</div><p>Это QA-лидерство как поддержка решений: руководство видит риск раньше и действует до того, как зелёный статус превращается в сюрприз.</p></div>
         </article>
       </div>
     </div>
@@ -125,11 +141,11 @@
   <section>
     <div class="wrap" style="max-width:860px; margin:0 auto">
       <div class="quote-block">
-        <p class="quote-text">Сильные QA-системы связывают requirements, automation, evidence, reporting и team behavior, чтобы качество становилось visible earlier.</p>
+        <p class="quote-text">Сильные QA-системы связывают требования, автоматизацию, доказательства, отчётность и поведение команды, чтобы качество становилось видимым раньше.</p>
         <p class="quote-sub" style="margin-top:18px">
           <a class="btn btn-primary" href="about.html#contact">Связаться</a>
-          <a class="btn" href="../cv.html">English CV</a>
-          <a class="btn" href="cv.html">Русское CV</a>
+          <a class="btn" href="../cv.html">Английское резюме</a>
+          <a class="btn" href="cv.html">Русское резюме</a>
         </p>
       </div>
     </div>
@@ -138,14 +154,14 @@
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <div class="footer-brand"><strong>Serghei Fortuna</strong><p>AI QA Engineer · QA Lead · Quality Systems</p></div>
+    <div class="footer-brand"><strong>Сергей Фортуна</strong><p>AI QA инженер · QA Lead · системы качества</p></div>
     <nav class="footer-links">
       <a href="index.html">Главная</a>
       <a href="about.html">Обо мне</a>
       <a href="evidence.html">Кейсы</a>
-      <a href="cv.html">CV</a>
+      <a href="cv.html">Резюме</a>
       <a href="https://www.linkedin.com/in/sergey-fortuna-11864a1a2" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="about.html#contact">Email</a>
+      <a href="about.html#contact">Почта</a>
     </nav>
   </div>
 </footer>

@@ -23,9 +23,67 @@
     onScroll();
   }
 
+  /* ── Mobile nav + language dropdown ─────────────────────── */
+  const navToggle = qs(".nav-toggle");
+  const navLinks = qs(".nav-links");
+  if (nav && navToggle && navLinks) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    qsa(":scope > a", navLinks).forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  qsa(".language-dropdown").forEach(dropdown => {
+    const toggle = qs(".language-toggle", dropdown);
+    if (!toggle) return;
+
+    toggle.addEventListener("click", event => {
+      event.stopPropagation();
+      const isOpen = dropdown.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+
+      qsa(".language-dropdown").forEach(other => {
+        if (other !== dropdown) {
+          other.classList.remove("open");
+          const otherToggle = qs(".language-toggle", other);
+          if (otherToggle) otherToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  });
+
+  document.addEventListener("click", event => {
+    if (event.target.closest(".language-dropdown")) return;
+    qsa(".language-dropdown.open").forEach(dropdown => {
+      dropdown.classList.remove("open");
+      const toggle = qs(".language-toggle", dropdown);
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key !== "Escape") return;
+    if (nav && navToggle) {
+      nav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+    qsa(".language-dropdown.open").forEach(dropdown => {
+      dropdown.classList.remove("open");
+      const toggle = qs(".language-toggle", dropdown);
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
   /* ── Active nav link ────────────────────────────────────── */
   const page = location.pathname.split("/").pop() || "index.html";
-  qsa(".nav-links a").forEach(a => {
+  qsa(".nav-links > a").forEach(a => {
     const href = a.getAttribute("href");
     if (href && href !== "#" && !href.startsWith("mailto") && !href.startsWith("tel")) {
       if (href === page || (page === "" && href === "index.html")) {

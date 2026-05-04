@@ -19,14 +19,27 @@
       <strong>Serghei Fortuna</strong>
       <span>AI QA Engineer · QA Lead</span>
     </a>
-    <div class="nav-links">
-      <a href="index.html" aria-label="Open portfolio homepage">Home</a>
+    <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" id="primary-navigation">
+      <a href="index.html" aria-label="Current page: portfolio homepage">Home</a>
       <a href="about.html" aria-label="Read professional story about Serghei Fortuna">About</a>
       <a href="evidence.html" aria-label="Read QA case studies by Serghei Fortuna">Case Studies</a>
-      <a href="cv.html" class="active" aria-label="Current page: HTML CV for Serghei Fortuna">CV</a>
+      <a href="cv.html" class="active" aria-label="Open HTML CV for Serghei Fortuna">CV</a>
       <a href="https://www.linkedin.com/in/sergey-fortuna-11864a1a2" target="_blank" rel="noopener" aria-label="Open Serghei Fortuna LinkedIn profile">LinkedIn</a>
       <a href="about.html#contact" class="nav-cta" aria-label="Open contact section for Serghei Fortuna">Contact</a>
-      <span class="language-switch" aria-label="Language switch"><span class="active-lang">EN</span><a href="ru/cv.html">RU</a></span>
+      <div class="language-dropdown">
+        <button class="language-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language selector">
+          <span>EN</span><span class="lang-chevron" aria-hidden="true">⌄</span>
+        </button>
+        <div class="language-menu" role="menu">
+          <a href="cv.html" class="active-lang" role="menuitem">English</a>
+          <a href="ru/cv.html" role="menuitem">Русский</a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
