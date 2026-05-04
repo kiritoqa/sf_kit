@@ -1,0 +1,6 @@
+# This repository is used to publish the public portfolio through GitHub Pages.
+# Keep internal knowledge, CV drafts, and private working files out of GitHub.
+*
+!.gitignore
+!docs/
+!docs/**
