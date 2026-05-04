@@ -6,6 +6,9 @@
   <title>Serghei Fortuna — Featured QA Case Studies</title>
   <meta name="description" content="Curated QA case studies: AI/RAG quality governance, SpecForge, snapshot-driven Playwright automation, VisualGuard, accessibility operations, data-driven QA scale, and project health reporting.">
   <link rel="canonical" href="https://kiritoqa.github.io/sf_kit/evidence.html">
+  <link rel="alternate" hreflang="en" href="https://kiritoqa.github.io/sf_kit/evidence.html">
+  <link rel="alternate" hreflang="ru" href="https://kiritoqa.github.io/sf_kit/ru/evidence.html">
+  <link rel="alternate" hreflang="x-default" href="https://kiritoqa.github.io/sf_kit/evidence.html">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,11 +22,11 @@
     <div class="nav-links">
       <a href="index.html" aria-label="Open portfolio homepage">Home</a>
       <a href="about.html" aria-label="Read professional story about Serghei Fortuna">About</a>
-      <a href="evidence.html" class="active" aria-label="Current page: QA case studies by Serghei Fortuna">Cases</a>
-      <a href="insights.html" aria-label="Read QA insights and writing by Serghei Fortuna">Insights</a>
+      <a href="evidence.html" class="active" aria-label="Current page: QA case studies by Serghei Fortuna">Case Studies</a>
       <a href="cv.html" aria-label="Open HTML CV for Serghei Fortuna">CV</a>
       <a href="https://www.linkedin.com/in/sergey-fortuna-11864a1a2" target="_blank" rel="noopener" aria-label="Open Serghei Fortuna LinkedIn profile">LinkedIn</a>
       <a href="about.html#contact" class="nav-cta" aria-label="Open contact section for Serghei Fortuna">Contact</a>
+      <span class="language-switch" aria-label="Language switch"><span class="active-lang">EN</span><a href="ru/evidence.html">RU</a></span>
     </div>
   </div>
 </nav>
@@ -33,8 +36,8 @@
   <header class="page-hero">
     <div class="wrap">
       <div class="eyebrow"><span class="dot"></span> Curated evidence</div>
-      <h1>Eight case studies that explain how I build quality.</h1>
-      <p class="lead">This page is intentionally selective. The goal is not to show every internal artifact, but to make the strongest proof easy to understand: what problem existed, what system I built, and why a team would want that capability on their project.</p>
+      <h1>Eight case studies that show how quality systems are built.</h1>
+      <p class="lead">This page is intentionally selective. The goal is to make the strongest proof easy to understand: what problem existed, what system was built, and why that capability matters on a project.</p>
     </div>
   </header>
 
@@ -43,7 +46,7 @@
       <div class="section-head">
         <div class="section-label">Competitor-informed structure</div>
         <h2>Less archive, more signal</h2>
-        <p>Strong QA/SDET portfolios usually win with a small number of deep, clear cases. I removed the public long-form archive from this page and kept the cases that create the strongest hiring signal for CTO, VP Engineering, Head of Product, or QA leadership readers.</p>
+        <p>Strong QA/SDET portfolios usually work best with a small number of deep, clear cases. These examples were selected because they show practical judgment, system thinking, and evidence of delivery value.</p>
       </div>
 
       <div class="filter-row" role="group" aria-label="Filter by category">
@@ -58,67 +61,67 @@
       <div class="grid-2" id="ev-grid">
 
         <article id="ai-quality" class="ev-card" data-category="ai">
-          <div class="ev-card-top"><span class="tag tag-violet">AI product QA</span><span class="score">96/100</span></div>
+          <div class="ev-card-top"><span class="tag tag-violet">AI product QA</span></div>
           <h3>AI quality is a contract, not a demo</h3>
-          <div class="ev-block"><div class="ev-block-label">Problem</div><p>A maritime / regulated-adjacent portal used semantic search and a RAG chatbot. Quality could not be reduced to “I asked a few questions and it looked fine”: LLM behavior is non-deterministic, latency matters, multilingual answers matter, and hallucinations can look confident.</p></div>
-          <div class="ev-block"><div class="ev-block-label">What I built / shaped</div><p>A QA model with API-first validation, golden dataset thinking, measurable thresholds, groundedness / faithfulness checks, p50/p95 latency thinking, expert UAT, escalation paths, and documented release evidence. The public-safe wording is anonymized; client names and internal milestones are not exposed.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Why it makes teams want me involved</div><p>Most teams can demo AI. Fewer teams can decide whether an AI release is safe, measurable, and owned. This case shows how I turn AI uncertainty into a quality governance model that leadership can actually use.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Problem</div><p>A maritime / regulated-adjacent portal used semantic search and a RAG chatbot. Quality could not be reduced to “a few questions looked fine”: LLM behavior is non-deterministic, latency matters, multilingual answers matter, and hallucinations can look confident.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What was built / shaped</div><p>A QA model with API-first validation, golden dataset thinking, measurable thresholds, groundedness / faithfulness checks, p50/p95 latency thinking, expert UAT, escalation paths, and documented release evidence. The public-safe wording is anonymized; client names and internal milestones are not exposed.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters to a team</div><p>Most teams can demo AI. Fewer teams can decide whether an AI release is safe, measurable, and owned. This case shows AI uncertainty turned into a quality governance model that leadership can actually use.</p></div>
         </article>
 
         <article class="ev-card" data-category="ai">
-          <div class="ev-card-top"><span class="tag tag-violet">AI governance</span><span class="score">95/100</span></div>
+          <div class="ev-card-top"><span class="tag tag-violet">AI governance</span></div>
           <h3>AI-assisted QA without losing human ownership</h3>
           <div class="ev-block"><div class="ev-block-label">Problem</div><p>AI can speed up QA and still produce weak work: invented business rules, missing edge cases, vague bugs, unstable tests, or outputs that no one feels responsible for.</p></div>
-          <div class="ev-block"><div class="ev-block-label">What I built / shaped</div><p>A quality standard for AI-assisted QA: requirements readiness, design readiness, prompt structure, S1–S5 validation gates, human review, audit trail, privacy awareness, degradation signals, and team enablement through workshops and practical assessment.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Why it makes teams want me involved</div><p>Companies want AI speed but fear AI chaos. This system gives both speed and control: faster artifacts, clearer review gates, and explicit human accountability for the result.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What was built / shaped</div><p>A quality standard for AI-assisted QA: requirements readiness, design readiness, prompt structure, S1–S5 validation gates, human review, audit trail, privacy awareness, degradation signals, and team enablement through workshops and practical assessment.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters to a team</div><p>Companies want AI speed but fear AI chaos. This system gives both speed and control: faster artifacts, clearer review gates, and explicit human accountability for the result.</p></div>
         </article>
 
         <article id="specforge" class="ev-card" data-category="spec">
-          <div class="ev-card-top"><span class="tag tag-green">Requirements</span><span class="score">94/100</span></div>
+          <div class="ev-card-top"><span class="tag tag-green">Requirements</span></div>
           <h3>From story to evidence: SpecForge</h3>
           <div class="ev-block"><div class="ev-block-label">Problem</div><p>Requirements, test cases, bugs, decisions, and coverage often live in different places. QA starts from assumptions, automation starts from unstable context, and the team pays for the same uncertainty repeatedly.</p></div>
-          <div class="ev-block"><div class="ev-block-label">What I built / shaped</div><p>SpecForge: a story-to-evidence workflow in Cursor. Jira context moves into analysis, BA questions, QA specification, test cases, review, user-flow map, dependency graph, coverage checks, and automation-ready output. The specification becomes a living delivery artifact, not a static document.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Why it makes teams want me involved</div><p>This is the kind of system that changes QA from “test after development” into “risk discovery before commitment.” It saves time because it prevents confusion from entering the sprint.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What was built / shaped</div><p>SpecForge: a story-to-evidence workflow in Cursor. Jira context moves into analysis, BA questions, QA specification, test cases, review, user-flow map, dependency graph, coverage checks, and automation-ready output. The specification becomes a living delivery artifact, not a static document.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters to a team</div><p>This is the kind of system that changes QA from “test after development” into “risk discovery before commitment.” It saves time because it prevents confusion from entering the sprint.</p></div>
         </article>
 
         <article class="ev-card" data-category="auto">
-          <div class="ev-card-top"><span class="tag tag-sky">Automation architecture</span><span class="score">91/100</span></div>
+          <div class="ev-card-top"><span class="tag tag-sky">Automation architecture</span></div>
           <h3>Spec says what. Snapshots say how.</h3>
           <div class="ev-block"><div class="ev-block-label">Problem</div><p>End-to-end automation often becomes brittle because tests are written from assumptions: guessed selectors, copied text locators, hidden auth flows, and manual fixes inside test files after every UI change.</p></div>
-          <div class="ev-block"><div class="ev-block-label">What I built / shaped</div><p>A spec-linked, snapshot-driven Playwright model: the specification defines what user behavior matters; MCP captures real page structure; Page Objects are generated from actual snapshots; CI runs tests independently from the capture layer. Locator fixes belong in Page Objects, not random test patches.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Why it makes teams want me involved</div><p>This is modern automation architecture, not “record and hope.” It reduces locator debt, makes tests more explainable, and keeps the human responsible for specification and release decisions.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What was built / shaped</div><p>A spec-linked, snapshot-driven Playwright model: the specification defines what user behavior matters; MCP captures real page structure; Page Objects are generated from actual snapshots; CI runs tests independently from the capture layer. Locator fixes belong in Page Objects, not random test patches.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters to a team</div><p>This is modern automation architecture, not “record and hope.” It reduces locator debt, makes tests more explainable, and keeps the human responsible for specification and release decisions.</p></div>
         </article>
 
         <article class="ev-card" data-category="quality">
-          <div class="ev-card-top"><span class="tag tag-sky">Visual quality</span><span class="score">89/100</span></div>
+          <div class="ev-card-top"><span class="tag tag-sky">Visual quality</span></div>
           <h3>VisualGuard: visual regression as release confidence</h3>
           <div class="ev-block"><div class="ev-block-label">Problem</div><p>UI regressions do not always break functional tests. Layout shifts, missing sections, wrong responsive behavior, auth-specific pages, and environment differences can reach users while dashboards stay green.</p></div>
-          <div class="ev-block"><div class="ev-block-label">What I built / shaped</div><p>A configurable visual regression framework using Java, Playwright, JSON site configs, multiple viewports, auth handlers, screenshot-only mode, Allure reports, parallel execution, and Jenkins execution. It can compare dev/staging/prod or produce visual review artifacts.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Why it makes teams want me involved</div><p>It turns visual quality from subjective last-minute checking into repeatable evidence. Teams can see what changed, where, and under which environment conditions.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What was built / shaped</div><p>A configurable visual regression framework using Java, Playwright, JSON site configs, multiple viewports, auth handlers, screenshot-only mode, Allure reports, parallel execution, and Jenkins execution. It can compare dev/staging/prod or produce visual review artifacts.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters to a team</div><p>It turns visual quality from subjective last-minute checking into repeatable evidence. Teams can see what changed, where, and under which environment conditions.</p></div>
         </article>
 
         <article class="ev-card" data-category="quality">
-          <div class="ev-card-top"><span class="tag tag-amber">Accessibility</span><span class="score">88/100</span></div>
+          <div class="ev-card-top"><span class="tag tag-amber">Accessibility</span></div>
           <h3>Accessibility debt as an operational pipeline</h3>
           <div class="ev-block"><div class="ev-block-label">Problem</div><p>Accessibility reports can be huge, repetitive, and hard to convert into engineering work. Raw exports often create more confusion than decisions.</p></div>
-          <div class="ev-block"><div class="ev-block-label">What I built / shaped</div><p>SortSite processing and Axe + Playwright reporting: CSV/DOCX normalization, fuzzy matching, duplicate reduction, WCAG A/AA categorization, grouping by issue type and element, HTML summaries, and Jenkins-ready processing. In one documented context, processing went from roughly 3 hours to 15–45 minutes per site.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Why it makes teams want me involved</div><p>Compliance work becomes manageable and prioritized. Instead of handing developers a wall of issues, QA gives them a structured backlog and a way to track progress.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What was built / shaped</div><p>SortSite processing and Axe + Playwright reporting: CSV/DOCX normalization, fuzzy matching, duplicate reduction, WCAG A/AA categorization, grouping by issue type and element, HTML summaries, and Jenkins-ready processing. In one documented context, processing went from roughly 3 hours to 15–45 minutes per site.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters to a team</div><p>Compliance work becomes manageable and prioritized. Instead of handing developers a wall of issues, QA gives them a structured backlog and a way to track progress.</p></div>
         </article>
 
         <article id="data-scale" class="ev-card" data-category="auto">
-          <div class="ev-card-top"><span class="tag tag-sky">Scale</span><span class="score">93/100</span></div>
+          <div class="ev-card-top"><span class="tag tag-sky">Scale</span></div>
           <h3>26,000 test cases without 26,000 manual decisions</h3>
           <div class="ev-block"><div class="ev-block-label">Problem</div><p>Some products need high-volume coverage across dynamic data or repeating structures. Manual creation becomes slow, inconsistent, and expensive.</p></div>
-          <div class="ev-block"><div class="ev-block-label">What I built / shaped</div><p>Data-driven and pattern-based automation: 26,000 generated test cases in one project context; 1,000+ automated tests in 120 hours by reducing 116 similar forms into reusable patterns; approximately 1,700 tests automated in under one month in another context.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Why it makes teams want me involved</div><p>The impressive part is not the number alone. It is the ability to recognize repetition, turn it into a system, and scale coverage without scaling manual effort at the same rate.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What was built / shaped</div><p>Data-driven and pattern-based automation: 26,000 generated test cases in one project context; 1,000+ automated tests in 120 hours by reducing 116 similar forms into reusable patterns; approximately 1,700 tests automated in under one month in another context.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters to a team</div><p>The impressive part is not the number alone. It is the ability to recognize repetition, turn it into a system, and scale coverage without scaling manual effort at the same rate.</p></div>
         </article>
 
         <article id="project-health" class="ev-card" data-category="report">
-          <div class="ev-card-top"><span class="tag tag-green">Leadership visibility</span><span class="score">92/100</span></div>
+          <div class="ev-card-top"><span class="tag tag-green">Leadership visibility</span></div>
           <h3>What Jira says vs. what is really happening</h3>
           <div class="ev-block"><div class="ev-block-label">Problem</div><p>Jira status can look healthy while branches, commits, PRs, QA time, defects, and blockers tell another story. Leadership needs project health, not only ticket status.</p></div>
-          <div class="ev-block"><div class="ev-block-label">What I built / shaped</div><p>A weekly QA health reporting framework concept: standalone HTML report, Jira + Bitbucket + Harvest + defects + timelines, deadline overlap detection, trend history, and AI-assisted review of requirement-to-code coverage.</p></div>
-          <div class="ev-block"><div class="ev-block-label">Why it makes teams want me involved</div><p>This is QA leadership as decision support. It helps leadership see risk early, understand capacity, and act before “green status” becomes a late release surprise.</p></div>
+          <div class="ev-block"><div class="ev-block-label">What was built / shaped</div><p>A weekly QA health reporting framework concept: standalone HTML report, Jira + Bitbucket + Harvest + defects + timelines, deadline overlap detection, trend history, and AI-assisted review of requirement-to-code coverage.</p></div>
+          <div class="ev-block"><div class="ev-block-label">Why it matters to a team</div><p>This is QA leadership as decision support. It helps leadership see risk early, understand capacity, and act before “green status” becomes a late release surprise.</p></div>
         </article>
 
       </div>
@@ -128,16 +131,16 @@
   <section>
     <div class="wrap two-col">
       <div class="panel">
-        <div class="section-label">What I intentionally removed</div>
-        <h3>The public site is no longer an internal archive</h3>
-        <p>The full internal evidence map is still useful, but not as a public selling page. Lower-priority items such as daily planning formats, generic market research, interview counts, workload visualization, and early initiative concepts can dilute the main signal. They belong in private notes, interviews, or supporting appendix material — not in the first public proof page.</p>
+        <div class="section-label">Why this page is selective</div>
+        <h3>A portfolio is stronger when it is not an archive</h3>
+        <p>The full evidence map is useful in interviews and supporting materials, but the public page should stay focused. Lower-priority details can dilute the signal, while selected cases make the professional value easier to understand.</p>
       </div>
       <div class="panel">
         <div class="section-label">What stayed</div>
-        <h3>The cases that make a hiring manager lean forward</h3>
-        <p>I kept the stories that show rare combinations: AI quality governance, requirements-to-evidence workflow, spec-linked browser automation, visual regression, accessibility operations, large-scale data-driven QA, and real project health reporting. These are the cases most likely to make a team think: “We need this person on our project.”</p>
+        <h3>The cases that carry the strongest professional signal</h3>
+        <p>The selected stories show rare combinations: AI quality governance, requirements-to-evidence workflow, spec-linked browser automation, visual regression, accessibility operations, large-scale data-driven QA, and real project health reporting.</p>
         <div style="margin-top:20px">
-          <a class="btn" href="insights.html">Read related insights →</a>
+          <a class="btn" href="about.html#contact">Contact Me</a>
         </div>
       </div>
     </div>
@@ -146,11 +149,11 @@
   <section>
     <div class="wrap" style="max-width:860px; margin:0 auto">
       <div class="quote-block">
-        <p class="quote-text">I build QA systems that connect requirements, automation, evidence, reporting, and team behavior so quality becomes visible earlier and release decisions become less dependent on guesswork.</p>
+        <p class="quote-text">Strong QA systems connect requirements, automation, evidence, reporting, and team behavior so quality becomes visible earlier and release decisions depend less on guesswork.</p>
         <p class="quote-sub" style="margin-top:18px">
-          <a class="btn btn-primary" href="about.html#contact" aria-label="Open contact section for Serghei Fortuna">Get in touch</a>
+          <a class="btn btn-primary" href="about.html#contact" aria-label="Open contact section for Serghei Fortuna">Contact Me</a>
           <a class="btn" href="https://www.linkedin.com/in/sergey-fortuna-11864a1a2" target="_blank" rel="noopener" aria-label="Open Serghei Fortuna LinkedIn profile">LinkedIn</a>
-          <a class="btn" href="cv.html">View the HTML CV</a>
+          <a class="btn" href="cv.html">View CV</a>
         </p>
       </div>
     </div>
@@ -167,8 +170,7 @@
     <nav class="footer-links">
       <a href="index.html" aria-label="Open portfolio homepage">Home</a>
       <a href="about.html" aria-label="Read professional story about Serghei Fortuna">About</a>
-      <a href="evidence.html" aria-label="Read QA case studies by Serghei Fortuna">Cases</a>
-      <a href="insights.html" aria-label="Read QA insights and writing by Serghei Fortuna">Insights</a>
+      <a href="evidence.html" aria-label="Read QA case studies by Serghei Fortuna">Case Studies</a>
       <a href="cv.html" aria-label="Open HTML CV for Serghei Fortuna">CV</a>
       <a href="https://www.linkedin.com/in/sergey-fortuna-11864a1a2" target="_blank" rel="noopener" aria-label="Open Serghei Fortuna LinkedIn profile">LinkedIn</a>
       <a href="about.html#contact" aria-label="Open email contact section for Serghei Fortuna">Email</a>
