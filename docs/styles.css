@@ -321,7 +321,8 @@ h4 { font-size: 16px; letter-spacing: -.01em; }
 .grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
 .grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
-.two-col { display: grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items: start; }
+/* First column caps at readable heading width so labels + titles do not float in empty space on wide viewports */
+.two-col { display: grid; grid-template-columns: minmax(240px, min(36ch, 420px)) minmax(0, 1fr); gap: 22px; align-items: start; }
 
 /* ─── Tags ───────────────────────────────────────────────── */
 .tag {
@@ -1040,8 +1041,8 @@ h1 {
 
 .story-layout {
   display: grid;
-  grid-template-columns: minmax(280px, .82fr) minmax(420px, 1.18fr);
-  gap: 32px;
+  grid-template-columns: minmax(240px, min(34ch, 380px)) minmax(0, 1fr);
+  gap: 22px;
   align-items: stretch;
 }
 
