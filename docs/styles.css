@@ -328,6 +328,23 @@ h4 { font-size: 16px; letter-spacing: -.01em; }
 .grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
 .grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
+
+/* Three-up cards with footer links aligned on one baseline (home “next steps”) */
+.deck-cta {
+  align-items: stretch;
+}
+.deck-cta > .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.deck-cta > .card > div:last-child {
+  margin-top: auto;
+  padding-top: 18px;
+}
+.deck-cta .text-link {
+  margin-top: 0;
+}
 /* First column caps at readable heading width so labels + titles do not float in empty space on wide viewports */
 .two-col { display: grid; grid-template-columns: minmax(240px, min(36ch, 420px)) minmax(0, 1fr); gap: 22px; align-items: start; }
 
