@@ -32,11 +32,11 @@
       navToggle.setAttribute("aria-expanded", String(isOpen));
     });
 
-    qsa(":scope > a", navLinks).forEach(link => {
-      link.addEventListener("click", () => {
-        nav.classList.remove("open");
-        navToggle.setAttribute("aria-expanded", "false");
-      });
+    navLinks.addEventListener("click", event => {
+      const link = event.target.closest("a");
+      if (!link) return;
+      nav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
     });
   }
 
